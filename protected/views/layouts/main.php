@@ -18,6 +18,24 @@
         var dt_loader = {"bcolor":""};
         /* ]]> */
     </script>
+    <script type='text/javascript'>
+        $(document).ready(function()
+        {
+            var touch=!!('ontouchstart' in window);
+            if(touch)
+            {
+                $(document).on('touchstart','.experts-table',function()
+                {
+                    if($(this).hasClass('active')) $(this).removeClass('active')
+                    else
+                    {
+                        $(this).parent().find('li').removeClass('active')
+                        $(this).addClass('active')
+                    }
+                })
+            }
+        })
+    </script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-loader.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.parallax.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-navscroll.js'></script>
