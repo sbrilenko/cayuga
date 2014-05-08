@@ -24,7 +24,7 @@
             var touch=!!('ontouchstart' in window);
             if(touch)
             {
-                $(document).on('touchstart','.experts-table',function()
+                $(document).on('touchstart','.experts-table li',function()
                 {
                     if($(this).hasClass('active')) $(this).removeClass('active')
                     else
