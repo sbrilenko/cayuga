@@ -78,7 +78,7 @@
         <div class="centered-wrapper f-block-table">
             <div class="aligncenter text-transform-uppercase f-block-t-c">
                 <div class="under-h1">
-                    <h1 class="h1-margin-bottom">WE ARE CAYUGASOFT MOBILE</h1>
+                    <h1 class="h1-margin-bottom">WE ARE CAYUGA MOBILE</h1>
                 </div>
                 <div class="f-block-under-h1-text">We are a talanted group of mobile development experts, who can help take your idea from concept to the App Store or Play Store in just a few weeks!</div>
             </div>
@@ -227,7 +227,7 @@
                     <span>
                         <h1 class="under-h1">SERVICES</h1>
                     </span>
-            <div class="f-block-under-h1-text second-under-h1">Everything you need to rapidly take your idea from concept to the App Store</div>
+            <div class="f-block-under-h1-text second-under-h1">Everything you need to rapidly take your idea from concept to the App Store or Play Store</div>
         </div>
         <div class="clear"></div>
         <div class="services-block-mar">
@@ -346,22 +346,9 @@
             <div id="owl-testimonials-pqu2" class="owl-carousel testimonials-slider" data-token="dTfaN2">
                 <div class="testimonial-item">
                     <div>
-                        <img src="images/eugeniy.png">
-                        <br /><br />
-                        <div class="team-people-name">Eugen Polyansky</div>
-                        <div class="team-people-position">CEO & CO-Founder</div>
-
-                    </div>
-                    <div>
-                        <div class="client-work-slide-text" style="text-align: justify">Eugene is a design maven and dreamer. He has a rare combination of technology expertise and design expertise, having once worked as a creative designer in the Advertising industry.  He's also an experienced IT project manager and leads our development team. Today, Eugene spends much of his time on building our team and optimizing our development processes.</div>
-
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div>
                         <img src="images/mike.png">
                         <br /><br />
-                        <div class="team-people-name">Mike</div>
+                        <div class="team-people-name">Mike Sadowski</div>
                         <div class="team-people-position">CEO & Co-Founder</div>
 
                     </div>
@@ -369,6 +356,20 @@
 
                         <div class="client-work-slide-text" style="text-align: justify">Mike has been involved with New York area venture-backed software companies since the late 1990's, as a VP of Product, and CTO. He still remembers when VCs were (briefly) valuing companies based on a multiple of the number of engineers they had.
                             Today, Mike's interests include mobile business applications (especially in the area of logistics and supply-chain management), mobile gaming, and the Internet of Things.</div>
+
+                    </div>
+
+                </div>
+                <div class="testimonial-item">
+                    <div>
+                        <img src="images/eugeniy.png">
+                        <br /><br />
+                        <div class="team-people-name">Eugen Polyansky</div>
+                        <div class="team-people-position">COO and Co-Founde</div>
+
+                    </div>
+                    <div>
+                        <div class="client-work-slide-text" style="text-align: justify">Eugene is a design maven and dreamer. He has a rare combination of technology expertise and design expertise, having once worked as a creative designer in the Advertising industry.  He's also an experienced IT project manager and leads our development team. Today, Eugene spends much of his time on building our team and optimizing our development processes.</div>
 
                     </div>
                 </div>
@@ -398,7 +399,7 @@
                 <div class="clear"></div>
                 <div class="contact-left-text">
                     Cayugamobile.com<br />
-                    +77-0385 - 1452 - 87<br />
+                   <!-- +77-0385 - 1452 - 87<br /> -->
                     info@cayugamobile.com
                 </div>
             </div>
