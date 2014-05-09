@@ -38,6 +38,7 @@
         arr_top=[];
         $(document).ready(function()
         {
+            console.log("<?php echo Yii::app()->createAbsoluteUrl('/ajax/form') ?>",)
             /*submit form*/
             $('form input[type=submit]').on('click',function()
             {
