@@ -7,9 +7,10 @@
 <!--    <title>Cayuga mobile</title>-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel='stylesheet' id='dt-default-style-css'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='dt-owl-carousel-css'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/owl.carousel.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='dt-responsive-css'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/responsive.css' type='text/css' media='all' />
+    <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/owl.carousel.css' type='text/css' media='all' />
+    <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/responsive.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/css/animate.min.css' type='text/css' media='all' />
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-migrate.min.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.queryloader2.js'></script>
@@ -19,6 +20,22 @@
         /* ]]> */
     </script>
     <script type='text/javascript'>
+        function scrollMenu()
+        {
+            var arr_top=[];
+            var menu_par;
+            $('#nav ul li a').each(function(i)
+            {
+                menu_par=$(this).attr('href');
+                if(($.trim(menu_par)!=="#" || $.trim(menu_par)!=="") && $(menu_par).length>0)
+                {
+                    var offset=$(menu_par).offset()
+                    arr_top.push(offset.top)
+                }
+            })
+            return arr_top
+        }
+        arr_top=[];
         $(document).ready(function()
         {
             var touch=!!('ontouchstart' in window);
@@ -34,7 +51,41 @@
                     }
                 })
             }
+
+
+
+            arr_top=scrollMenu()
+
         })
+        $(window).scroll(function()
+        {
+            if($(window).scrollTop()<arr_top[0])
+            {
+                $('#navigation li').removeClass('current');
+            }
+            if($(window).scrollTop()>=arr_top[0] && $(window).scrollTop()<arr_top[0]+(arr_top[1]-arr_top[0])/2)
+            {
+                $('#navigation li').removeClass('current');
+                $('#navigation li').eq(0).addClass('current');
+            }
+            if($(window).scrollTop()>=(arr_top[arr_top.length-2]+(arr_top[arr_top.length-1]-arr_top[arr_top.length-2])/2-50 ))
+            {
+                $('#navigation li').removeClass('current');
+                $('#navigation li').eq(arr_top.length-1).addClass('current');
+            }
+            else
+            {
+                for(var i=0;i<arr_top.length-2;i++)
+                {
+                    if($(window).scrollTop()>=arr_top[i]+(arr_top[i+1]-arr_top[i])/2 && $(window).scrollTop()<arr_top[i+1]+(arr_top[i+2]-arr_top[i+1])/2)
+                    {
+                        $('#navigation li').removeClass('current');
+                        $('#navigation li').eq(i+1).addClass('current');
+                    }
+                }
+            }
+        })
+        $(window).resize(function(){ arr_top=scrollMenu();$(window).trigger('scroll')})
     </script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-loader.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.parallax.js'></script>
@@ -56,12 +107,12 @@
         <div class="percent-three-fourth float-right">    <!-- menu -->
             <nav id="navigation">
                 <ul id="mainnav" style="margin-top: 2px;">
-                    <li class="menu-item current-menu-item"><a href="#"><span>Home</span></a></li>
-                    <li class="menu-item current-menu-item"><a href="#" class="external"><span>About</span></a></li>
-                    <li class="menu-item current-menu-item"><a href="#" class="external"><span>Services</span></a></li>
-                    <li class="menu-item current-menu-item"><a href="" class="external"><span>Projects</span></a></li>
-                    <li class="menu-item current-menu-item"><a href="#" class="external"><span>Team</span></a></li>
-                    <li class="menu-item current-menu-item"><a href="#" class="external"><span>Contact</span></a></li>
+                    <li class="menu-item current-menu-item"><a href="#home"><span>Home</span></a></li>
+                    <li class="menu-item current-menu-item"><a href="#about" class="external"><span>About</span></a></li>
+                    <li class="menu-item current-menu-item"><a href="#services" class="external"><span>Services</span></a></li>
+                    <li class="menu-item current-menu-item"><a href="#projects" class="external"><span>Projects</span></a></li>
+                    <li class="menu-item current-menu-item"><a href="#team" class="external"><span>Team</span></a></li>
+                    <li class="menu-item current-menu-item"><a href="#contact" class="external"><span>Contact</span></a></li>
                 </ul>
 
             </nav><!--end navigation-->
@@ -72,7 +123,7 @@
 
 <div id="wrapper">
 
-<div class="wpb_row">
+<div id="home" class="wpb_row">
     <div class="first-block">
         <div class="main-back"></div>
         <div class="centered-wrapper f-block-table">
@@ -146,7 +197,7 @@
 
     <!-- WE'RE EXPERTS IN -->
 
-    <div class="parallax-bag-eft experts-in-back" data-token="QKv0G">
+    <div id="about" class="parallax-bag-eft experts-in-back" data-token="QKv0G">
         <div class="darker-overlay experts-padd">
             <div class="centered-wrapper aligncenter">
                 <span>
@@ -221,7 +272,7 @@
     <div class="clear"></div></div>
 
 <!-- services -->
-<div class="darker-overlay">
+<div id="services" class="darker-overlay">
     <div class="centered-wrapper services-padd">
         <div class="aligncenter">
                     <span>
@@ -270,7 +321,7 @@
 
 
 <!-- client work -->
-<div class="lighter-overlay client-work-padd">
+<div id="projects" class="lighter-overlay client-work-padd">
     <div class="centered-wrapper">
         <div class="aligncenter client-work-title-padd">
                 <span>
@@ -333,7 +384,7 @@
 <div class="clear"></div>
 
 <!-- our team -->
-<div class="lighter-overlay client-work-padd">
+<div id="team" class="lighter-overlay client-work-padd">
     <div class="centered-wrapper">
         <div class="aligncenter client-work-title-padd">
                 <span>
@@ -380,7 +431,7 @@
 </div>
 
 
-<div id="contact" class="parallax-bag-pgd"  data-token="I2oUz">
+<div id="contact" class="parallax-bag-pgd scrollto"  data-token="I2oUz">
     <div class="darker-overlay centered-wrapper contact-padd">
         <div class="aligncenter contact-padd-h1">
                 <span>
@@ -427,6 +478,7 @@
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.min.js?ver=3.50.0-2014.02.05'></script>
 
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/scripts.js?ver=3.7.2'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/easing.js'></script>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/hoverIntent.js?ver=r7'></script>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/smoothScroll.js?ver=1.2.1'></script>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.fitvids.js?ver=1.0.3'></script>
