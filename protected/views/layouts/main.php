@@ -38,6 +38,29 @@
         arr_top=[];
         $(document).ready(function()
         {
+            /*submit form*/
+            $('form input[type=submit]').on('click',function()
+            {
+                var th=$(this);
+                if(!th.hasClass('disabled'))
+                {
+                    th.addClass('disabled')
+                    var optionsUpdate = {
+                        url:    "/ajax/form",
+                        beforeSubmit: function(jqForm) {
+                        },
+                        success: function(responseText) {
+
+                            th.removeClass('disabled')
+                        }
+                    };
+                    $("form").ajaxSubmit(optionsUpdate);
+                    return false;
+                }
+                })
+            /*end submit form*/
+
+
             var touch=!!('ontouchstart' in window);
             if(touch)
             {
@@ -51,8 +74,6 @@
                     }
                 })
             }
-
-
 
             arr_top=scrollMenu()
 
@@ -86,6 +107,10 @@
             }
         })
         $(window).resize(function(){ arr_top=scrollMenu();$(window).trigger('scroll')})
+
+
+
+
     </script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-loader.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.parallax.js'></script>
@@ -107,7 +132,7 @@
         <div class="percent-three-fourth float-right">    <!-- menu -->
             <nav id="navigation">
                 <ul id="mainnav" style="margin-top: 2px;">
-                    <li class="menu-item current-menu-item"><a href="#home"><span>Home</span></a></li>
+                    <li class="menu-item current-menu-item current"><a href="#home"><span>Home</span></a></li>
                     <li class="menu-item current-menu-item"><a href="#about" class="external"><span>About</span></a></li>
                     <li class="menu-item current-menu-item"><a href="#services" class="external"><span>Services</span></a></li>
                     <li class="menu-item current-menu-item"><a href="#projects" class="external"><span>Projects</span></a></li>
