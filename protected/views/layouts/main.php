@@ -182,14 +182,14 @@
 
                 <ul class="float-right follow-us-ul">
                     <li class="follow-us">Follow Us On:</li>
-                    <li class="float-left f-b-tw">
+                    <!--<li class="float-left f-b-tw">
                         <a href="#">Twitter</a>
-                    </li>
+                    </li>-->
                     <li class="float-left li-f-b-f f-b-f">
-                        <a href="#">Facebook</a>
+                        <a href="https://www.facebook.com/CayugaSoft" target="_blank">Facebook</a>
                     </li>
                     <li class="float-left f-b-lid">
-                        <a href="#">LinkedIn</a>
+                        <a href="http://www.linkedin.com/company/cayugasoft-technologies" target="_blank">LinkedIn</a>
                     </li>
 
                 </ul>
@@ -481,9 +481,9 @@
             <div class="float-left">
                 <div class="contact-left-title">Get in touch with us</div>
                 <ul>
-                    <li><a href="#"><div class="soc-color"></div></a></li>
-                    <li><a href="#"><div class="soc-color tw pad"></div></a></li>
-                    <li><a href="#"><div class="soc-color gp"></div></a></li>
+                    <li><a href="https://www.facebook.com/CayugaSoft" target="_blank"><div class="soc-color"></div></a></li>
+                    <!--<li><a href="#"><div class="soc-color tw pad"></div></a></li>-->
+                    <!--<li><a href="#"><div class="soc-color gp"></div></a></li>-->
                 </ul>
                 <div class="clear"></div>
                 <div class="contact-left-text">
