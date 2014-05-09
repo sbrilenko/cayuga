@@ -1137,7 +1137,7 @@ h1
     color:#fff;
     font-family:SourceSansPro-Regular;
 }
-#contact form input[type=text],#contact form textarea
+#contact form input[type=text],#contact form input[type=email],#contact form textarea
 {
     color:#cacaca;
 }

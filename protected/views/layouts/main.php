@@ -46,11 +46,22 @@
                 {
                     th.addClass('disabled')
                     var optionsUpdate = {
-                        url:    "/ajax/form",
+                        url:  "<?php echo Yii::app()->createAbsoluteUrl('/ajax/form') ?>",
                         beforeSubmit: function(jqForm) {
+                            var error="";
+                            if($.trim($('form input[name=your-name]').val())==="" || $.trim($('form input[name=your-email]').val())==="" || $.trim($('form textarea').val())==="")
+                            {
+                                alert('Please fill in all fields')
+                                return false;
+                            }
                         },
                         success: function(responseText) {
+                            alert(responseText)
+                            if(responseText=="Mail send")
+                            {
+                                $('form input[type=text],form input[type=email],form textarea').val("")
 
+                            }
                             th.removeClass('disabled')
                         }
                     };

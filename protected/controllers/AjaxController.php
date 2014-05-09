@@ -1,24 +1,34 @@
 <?php
 class AjaxController extends CController {
+    public function filters() {
+        return array(
+            'ajaxOnly + form',
+        );
+    }
     function actionForm(){
-        echo "1";
-        die();
-        $input = Yii::app()->request->getPost('input');
-        // для примера будем приводить строку к верхнему регистру
-        $output = mb_strtoupper($input, 'utf-8');
-
-        // если запрос асинхронный, то нам нужно отдать только данные
-        if(Yii::app()->request->isAjaxRequest){
-            echo CHtml::encode($output);
-            // Завершаем приложение
-            Yii::app()->end();
+        $yourname = Yii::app()->request->getPost('your-name');
+        $youremail = Yii::app()->request->getPost('your-email');
+        $yourmessage = Yii::app()->request->getPost('your-message');
+        $mail = new YiiMailer();
+        $mail->setFrom('from@example.com', 'John Doe');
+        //$mail->setTo(array("mike@cayugasoft.com", "eugene@cayugasoft.com", "katerina@cayugasoft.com"));
+        $mail->setTo("secret007@ukr.net");
+        $mail->setSubject('New contact request from Cayugamobile.com');
+        $mail->setBody('New contact request from Cayugamobile.com<br />
+                        <br />
+                        Name:    '.$yourname.'<br />
+                        Email:   '.$youremail.'<br />
+                        Message: '.$yourmessage.'<br />
+                        <br />
+                        Cayuga Mobile
+        ');
+        if($mail->send())
+        {
+            echo "Mail send";
         }
-        else {
-            // если запрос не асинхронный, отдаём форму полностью
-            $this->render('form', array(
-                'input'=>$input,
-                'output'=>$output,
-            ));
+        else
+        {
+            echo "Error sanding mail";
         }
     }
 }
