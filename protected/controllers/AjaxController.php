@@ -10,8 +10,8 @@ class AjaxController extends CController {
         $youremail = Yii::app()->request->getPost('your-email');
         $yourmessage = Yii::app()->request->getPost('your-message');
 
-        $to  = "secret007@ukr.net" ;
-        //$to .= "Kelly &lt;kelly@example.com>";
+        //$to  = "mike@cayugasoft.com, eugene@cayugasoft.com, katerina@cayugasoft.com";
+        $to  = "secret007@ukr.net";
 
         $subject = "New contact request from Cayugamobile.com";
 
@@ -25,8 +25,7 @@ class AjaxController extends CController {
         ';
 
         $headers  = "Content-type: text/html; charset=windows-1251 \r\n";
-        $headers .= "From: Cayuga Mobile <test@ukr.net>\r\n";
-        $headers .= "Bcc: test@ukr.net\r\n";
+        $headers .= "From: Cayuga Mobile <mike@cayugasoft.com>\r\n";
 
         if(mail($to, $subject, $message, $headers))
         {
@@ -34,7 +33,7 @@ class AjaxController extends CController {
         }
         else
         {
-            echo "Error sanding mail";
+            echo "Error";
         }
     }
 }
