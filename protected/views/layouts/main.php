@@ -38,7 +38,6 @@
         arr_top=[];
         $(document).ready(function()
         {
-            console.log("<?php echo Yii::app()->createAbsoluteUrl('/ajax/form') ?>")
             /*submit form*/
             $('form input[type=submit]').on('click',function()
             {
@@ -47,7 +46,7 @@
                 {
                     th.addClass('disabled')
                     var optionsUpdate = {
-                        url:  "<?php echo Yii::app()->createAbsoluteUrl('/ajax/form') ?>",
+                        url:  "<?php echo Yii::app()->createUrl('/ajax/form') ?>",
                         beforeSubmit: function(jqForm) {
                             var error="";
                             if($.trim($('form input[name=your-name]').val())==="" || $.trim($('form input[name=your-email]').val())==="" || $.trim($('form textarea').val())==="")
