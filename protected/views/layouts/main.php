@@ -403,7 +403,7 @@
                     </div>
                     <div>
                         <div class="mobile-show">
-                            <img src="images/quality-ass.png">
+                            <img src="images/gamepad.png">
                             <div class="client-work-slide-title-padd">
                                 <div class="client-work-slide-title">Social Game</div>
                             </div>
@@ -482,6 +482,7 @@
                 <div class="contact-left-title">Get in touch with us</div>
                 <ul>
                     <li><a href="https://www.facebook.com/CayugaSoft" target="_blank"><div class="soc-color"></div></a></li>
+                    <li><a href="http://www.linkedin.com/company/cayugasoft-technologies" target="_blank"><div class="soc-color in"></div></a></li>
                     <!--<li><a href="#"><div class="soc-color tw pad"></div></a></li>-->
                     <!--<li><a href="#"><div class="soc-color gp"></div></a></li>-->
                 </ul>

@@ -813,6 +813,13 @@ h1
 {
     background-position: 0 -84px;
 }
+.soc-color.in{
+    background: url('../images/In.png') no-repeat;
+    height:42px;
+    width:42px;
+    float:left;
+    margin-left:12px;
+}
 .pad
 {
     margin:0 12px;
