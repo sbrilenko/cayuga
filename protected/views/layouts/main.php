@@ -247,57 +247,68 @@
                 <div class="centered-wrapper">
                     <ul class="experts-table pos-rel">
                         <li class="block">
-                            <div class="padd hide">
-                                <div class="title">Business Apps</div>
-                                <div class="text">Your users expect mobile access to their enterprise data, and the ability to execute transactions using their mobile devices. And while they do so, they want the experience of a consumer app.</div>
+                            <div class="pos-rel">
+                                <div class="padd hide">
+                                    <div class="title">Business Apps</div>
+                                    <div class="text">Your users expect mobile access to their enterprise data, and the ability to execute transactions using their mobile devices. And while they do so, they want the experience of a consumer app.</div>
+                                </div>
+                                <div class="padd visible">
+                                    <div class="business-app"></div>
+                                    <div class="text-visible">Business<br />Applications</div>
+                                </div>
                             </div>
-                            <div class="padd visible">
-                                <div class="business-app"></div>
-                                <div class="text-visible">Business<br />Applications</div>
+
+                        </li>
+                        <li class="padd"></li>
+                        <li class="block">
+                            <div class="pos-rel">
+                                <div class="padd hide">
+                                    <div class="title">Gaming</div>
+                                    <div class="text">Have you considered creating a game for your brand?  Games are one of the the best and most cost-effective ways to engage your customers for hours, not just minutes or seconds.</div>
+                                </div>
+                                <div class="padd visible">
+                                    <div class="gaming"></div>
+                                    <div class="text-visible">Gaming</div>
+                                </div>
+                             </div>
+                        </li>
+                        <li class="padd"></li>
+                        <li class="block">
+                            <div class="pos-rel">
+                                <div class="padd hide">
+                                    <div class="title">Social Media</div>
+                                    <div class="text">Social networks provide new means for engaging your customers and spreading word about your brand.  We'll ensure your app ties into the leading social networks' APIs.</div>
+                                </div>
+                                <div class="padd visible">
+                                    <div class="experts-social-media"></div>
+                                    <div class="text-visible">Social<br />Media</div>
+                                </div>
+                             </div>
+                        </li>
+                        <li class="padd"></li>
+                        <li class="block">
+                            <div class="pos-rel">
+                                <div class="padd hide">
+                                    <div class="title">Mobile Commerce</div>
+                                    <div class="text">Do you have a mobile app for placing orders? We'll help you think about how to take advantage of the shift to mobile, and then we'll build the apps you need to capture new revenues. </div>
+                                </div>
+                                <div class="padd visible">
+                                    <div class="experts-mobile-comm"></div>
+                                    <div class="text-visible">Mobile<br />Commerce</div>
+                                </div>
                             </div>
                         </li>
                         <li class="padd"></li>
                         <li class="block">
-                            <div class="padd hide">
-                                <div class="title">Gaming</div>
-                                <div class="text">Have you considered creating a game for your brand?  Games are one of the the best and most cost-effective ways to engage your customers for hours, not just minutes or seconds.</div>
-                            </div>
-                            <div class="padd visible">
-                                <div class="gaming"></div>
-                                <div class="text-visible">Gaming</div>
-                            </div>
-                        </li>
-                        <li class="padd"></li>
-                        <li class="block">
-                            <div class="padd hide">
-                                <div class="title">Social Media</div>
-                                <div class="text">Social networks provide new means for engaging your customers and spreading word about your brand.  We'll ensure your app ties into the leading social networks' APIs.</div>
-                            </div>
-                            <div class="padd visible">
-                                <div class="experts-social-media"></div>
-                                <div class="text-visible">Social<br />Media</div>
-                            </div>
-                        </li>
-                        <li class="padd"></li>
-                        <li class="block">
-                            <div class="padd hide">
-                                <div class="title">Mobile Commerce</div>
-                                <div class="text">Do you have a mobile app for placing orders? We'll help you think about how to take advantage of the shift to mobile, and then we'll build the apps you need to capture new revenues. </div>
-                            </div>
-                            <div class="padd visible">
-                                <div class="experts-mobile-comm"></div>
-                                <div class="text-visible">Mobile<br />Commerce</div>
-                            </div>
-                        </li>
-                        <li class="padd"></li>
-                        <li class="block">
-                            <div class="padd hide">
-                                <div class="title">Internet of Thing</div>
-                                <div class="text">We’re creating mobile apps that control smart devices, and cloud services that manage a network of smart devices. We’ll connect it all to billing and e-commerce systems to make sure you get paid.</div>
-                            </div>
-                            <div class="padd visible">
-                                <div class="experts-internet-of-things"></div>
-                                <div class="text-visible">Internet of<br />Things</div>
+                            <div class="pos-rel">
+                                <div class="padd hide">
+                                    <div class="title">Internet of Thing</div>
+                                    <div class="text">We’re creating mobile apps that control smart devices, and cloud services that manage a network of smart devices. We’ll connect it all to billing and e-commerce systems to make sure you get paid.</div>
+                                </div>
+                                <div class="padd visible">
+                                    <div class="experts-internet-of-things"></div>
+                                    <div class="text-visible">Internet of<br />Things</div>
+                                </div>
                             </div>
                         </li>
                     </ul>
