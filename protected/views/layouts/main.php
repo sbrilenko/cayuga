@@ -126,9 +126,9 @@
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-loader.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.parallax.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-navscroll.js'></script>
-    <?php $this->pageTitle="About | Mobile App Design &amp; Development Company in NYC - Fueled";?>
+    <?php $this->pageTitle="Mobile software development company in New York City";?>
     <meta name="description" content="Cayuga Mobile is a team of mobile software development experts, dedicated to creating knock-out mobile apps, at a reasonable cost">
-    <meta name="keywords" content="mobile apps, mobile application development company, mobile application developer, mobile application development, mobile design, iphone app development, Android app development,Android app, iphone app, iOS app, mobile website development, iphone app development, iOS app development, Android app development">
+    <meta name="keywords" content="NYC,New York City,mobile apps,mobile application development company,mobile application developer,mobile application development,mobile design,iphone app development,Android app development,Android app,iphone app,iOS app,mobile website development,iphone app development,iOS app development,Android app development">
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
