@@ -947,6 +947,7 @@ h1
 .experts-table li.block .padd
 {
     padding:0 20px;
+    height:100%;
 }
 .experts-table li.block .title
 {

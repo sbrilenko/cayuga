@@ -165,10 +165,13 @@
     <div class="first-block">
         <div class="main-back"></div>
         <div class="centered-wrapper f-block-table">
-            <div class="aligncenter text-transform-uppercase f-block-t-c">
-                <div class="under-h1">
-                    <h1 class="h1-margin-bottom">WE ARE CAYUGA MOBILE</h1>
-                </div>
+            <div class="experts-padd aligncenter text-transform-uppercase f-block-t-c">
+                <span>
+                    <h1 class="margin under-h1" style="padding:0 25px 5px 25px;display: inherit;">WE ARE CAYUGA MOBILE</h1>
+                </span>
+<!--                <div class="under-h1">-->
+<!--                    <h1 class="h1-margin-bottom">WE ARE CAYUGA MOBILE</h1>-->
+<!--                </div>-->
                 <div class="f-block-under-h1-text">We are a talanted group of mobile development experts, who can help take your idea from concept to the App Store or Play Store in just a few weeks!</div>
             </div>
             <div class="clear"></div>
@@ -200,13 +203,19 @@
 
     <div class="second-block-back">
         <div class="centered-wrapper">
-            <div class="second-padd">
+            <div class="services-padd second-padd">
                 <div class="aligncenter">
-                    <div class="under-h1">
-                        <h1 class="second-h1">WHY YOU SHOULD CHOOSE US?</h1>
-                    </div>
+                    <span>
+                        <h1 class="under-h1">WHY YOU SHOULD CHOOSE US?</h1>
+                    </span>
                     <div class="f-block-under-h1-text second-under-h1">Cayuga Mobile does outstanding mobile software development work, at a competitive price. </div>
                 </div>
+<!--                <div class="aligncenter">-->
+<!--                    <div class="under-h1">-->
+<!--                        <h1 class="second-h1">WHY YOU SHOULD CHOOSE US?</h1>-->
+<!--                    </div>-->
+<!--                    <div class="f-block-under-h1-text second-under-h1">Cayuga Mobile does outstanding mobile software development work, at a competitive price. </div>-->
+<!--                </div>-->
                 <div class="second-table-block">
                     <div class="s-table-block-img">
                         <img src="images/many.png">
@@ -270,7 +279,7 @@
                                     <div class="gaming"></div>
                                     <div class="text-visible">Gaming</div>
                                 </div>
-                             </div>
+                            </div>
                         </li>
                         <li class="padd"></li>
                         <li class="block">
@@ -283,7 +292,7 @@
                                     <div class="experts-social-media"></div>
                                     <div class="text-visible">Social<br />Media</div>
                                 </div>
-                             </div>
+                            </div>
                         </li>
                         <li class="padd"></li>
                         <li class="block">
