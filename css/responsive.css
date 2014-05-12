@@ -296,7 +296,7 @@
     }
     .follow-us
     {
-        margin-right: 26px;
+        margin-right: 0px;
     }
 
 
@@ -482,7 +482,7 @@
     }
     #contact ul,.contact-left-text
     {
-        width:150px;
+        width:100px;
         margin: 0 auto;
     }
     .contact-left-text
@@ -496,6 +496,9 @@
     .percent-one-half, .percent-one-third, .percent-two-third, .percent-three-fourth, .percent-one-fourth, .percent-one-fifth, .percent-two-fifth, .percent-three-fifth, .percent-four-fifth, .percent-one-sixth, .percent-five-sixth
     {
         margin:0 !important;
+    }
+    .follow-us-ul li.float-left.li-f-b-f.li-f-b-f{
+        display: block;
     }
 }
 
@@ -793,7 +796,7 @@
     }
     #contact ul,.contact-left-text
     {
-        width:150px;
+        width:100px;
         margin: 0 auto;
     }
     .contact-left-text
@@ -1033,7 +1036,7 @@
     }
     #contact ul,.contact-left-text
     {
-        width:150px;
+        width:100px;
         margin: 0 auto;
     }
     .contact-left-text{
