@@ -161,9 +161,9 @@
     <div class="first-block">
         <div class="main-back"></div>
         <div class="centered-wrapper f-block-table">
-            <div class="experts-padd aligncenter text-transform-uppercase f-block-t-c">
+            <div class="experts-padd aligncenter f-block-t-c">
                 <span>
-                    <h1 class="margin under-h1" style="padding:0 25px 5px 25px;display: inline;">WE ARE CAYUGA MOBILE</h1>
+                    <h1 class="margin under-h1 text-transform-uppercase" style="padding:0 25px 5px 25px;display: inline;">WE ARE CAYUGA MOBILE</h1>
                 </span>
 <!--                <div class="under-h1">-->
 <!--                    <h1 class="h1-margin-bottom">WE ARE CAYUGA MOBILE</h1>-->
