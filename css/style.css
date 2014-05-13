@@ -430,7 +430,6 @@ h6 {
     /* IE8- hacks */
     width: 1px\9;
     height: 1px\9;
-    overflow: hidden\9;
     position: absolute\9;
 }
 
