@@ -60,9 +60,25 @@ button, input.button {position:relative;top:0.25em;}
 }
 .experts-table li.block .hide,.experts-table li.block:hover .visible
 {
-    display: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 5-7 */
+    filter: alpha(opacity=0);
+    /* Netscape */
+    -moz-opacity: 0;
+    /* Safari 1.x */
+    -khtml-opacity: 0;
+    /* Good browsers */
+    opacity: 0;
 }
 .experts-table li.block:hover .hide
 {
-    display: block;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 5-7 */
+    filter: alpha(opacity=100);
+    /* Netscape */
+    -moz-opacity: 1;
+    /* Safari 1.x */
+    -khtml-opacity: 1;
+    /* Good browsers */
+    opacity: 1;
 }
