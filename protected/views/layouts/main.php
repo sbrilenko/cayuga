@@ -509,7 +509,7 @@
             </div>
 
             <div class="float-right">
-                <form action="/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                <form action="/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form pos-rel" novalidate="novalidate">
                     <div class="percent-one-half"> <br />
                             <span class="wpcf7-form-control-wrap your-name float-left">
                                 <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Name" /></span><br />
