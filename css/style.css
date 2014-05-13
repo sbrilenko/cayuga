@@ -425,6 +425,7 @@ h6 {
     cursor: pointer;
     color: #323232;
     top: 3px;
+    display: block;
 
     /* IE8- hacks */
     width: 1px\9;
