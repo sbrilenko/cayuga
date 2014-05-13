@@ -500,6 +500,7 @@
                     <!--<li><a href="#"><div class="soc-color tw pad"></div></a></li>-->
                     <!--<li><a href="#"><div class="soc-color gp"></div></a></li>-->
                 </ul>
+                <div class="clear"></div>
                 <div class="contact-left-text">
                     Cayugamobile.com<br />
                    <!-- +77-0385 - 1452 - 87<br /> -->
@@ -508,7 +509,7 @@
             </div>
 
             <div class="float-right">
-                <form action="/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form pos-rel" novalidate="novalidate">
+                <form action="/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form pos-rel" novalidate="novalidate" style="width:100%">
                     <div class="percent-one-half"> <br />
                             <span class="wpcf7-form-control-wrap your-name float-left">
                                 <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Name" /></span><br />
