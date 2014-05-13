@@ -896,7 +896,11 @@ h1
 }
 .quotes-block-q2
 {
-    width: 0;top: 25px;height: 17px;padding: 18px 60px 0 0;position: relative;background: url('../images/quotes.png') 100% 0 no-repeat;
+    width: 0;
+    top: 25px;
+    height: 17px;
+    padding: 18px 60px 0 0;
+    position: relative;background: url('../images/quotes.png') center 0 no-repeat;
 }
 .quotes-block-text
 {
