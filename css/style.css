@@ -411,7 +411,7 @@ h6 {
     transition:all 0.2s linear;
     background-color: rgba(0, 0, 0, 0.6);
     background:transparent;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
     zoom: 1;
     box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px;
 }
@@ -673,7 +673,7 @@ input:focus, textarea:focus {
 {
     background-color: rgba(255,255,255, 0.70);
     background:transparent;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff00,endColorstr=#ffffff00);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50FFFFFF,endColorstr=#50FFFFFF);
     zoom: 1;
 }
 .first-block
@@ -932,7 +932,7 @@ h1
 {
     background-color: rgba(0,0,0, 0.50);
     background:transparent;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
     zoom: 1;
     width:100%;
     margin:69px 0 0 0;
@@ -1041,7 +1041,7 @@ h1
 {
     background-color: rgba(255,255,255, 0.20);
     background:transparent;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff00,endColorstr=#ffffff00);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
     zoom: 1;
 }
 .experts-table li.block:hover .padd.hide,.experts-table li.block.active .padd.hide
