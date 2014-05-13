@@ -304,7 +304,7 @@
                         <li class="block">
                             <div class="pos-rel">
                                 <div class="padd hide">
-                                    <div class="title">Internet of Thing</div>
+                                    <div class="title">Internet of Things</div>
                                     <div class="text">We’re creating mobile apps that control smart devices, and cloud services that manage a network of smart devices. We’ll connect it all to billing and e-commerce systems to make sure you get paid.</div>
                                 </div>
                                 <div class="padd visible">
