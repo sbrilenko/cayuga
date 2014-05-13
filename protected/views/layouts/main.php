@@ -132,7 +132,7 @@
 
 <div id="preloader"></div>
 
-<header id="header">
+<div id="header">
     <div class="centered-wrapper">
         <div class="percent-one-fourth">
             <div class="logo"><a href="#" title="Cayuga mobile" rel="home"><img src="images/logo.png" alt="Cayuga mobile"></a></div>
@@ -153,7 +153,7 @@
         </div>
         <div class="clear"></div>
     </div><!--end centered-wrapper-->
-</header>
+</div>
 
 <div id="wrapper">
 
