@@ -916,7 +916,7 @@ h1
 }
 .experts-in-back h1
 {
-    display: inherit;padding:0 25px;border-bottom: 2px solid #f7931e;color:#fff;
+    display: inline;padding:0 25px;border-bottom: 2px solid #f7931e;color:#fff;
 }
 .experts-in-back h1.margin
 {
@@ -1084,7 +1084,7 @@ h1
 {
     padding:0 25px 5px 25px;
     color:#313131;
-    display: inherit;
+    display: inline;
 }
 .services-block-mar
 {
