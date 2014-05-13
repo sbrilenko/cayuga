@@ -410,6 +410,9 @@ h6 {
     -o-transition:all 0.2s linear;
     transition:all 0.2s linear;
     background-color: rgba(0, 0, 0, 0.6);
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000);
+    zoom: 1;
     box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 3px;
 }
 
@@ -669,6 +672,9 @@ input:focus, textarea:focus {
 .second-block-back
 {
     background-color: rgba(255,255,255, 0.70);
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000);
+    zoom: 1;
 }
 .first-block
 {
@@ -925,6 +931,9 @@ h1
 .experts-black-line
 {
     background-color: rgba(0,0,0, 0.50);
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000);
+    zoom: 1;
     width:100%;
     margin:69px 0 0 0;
 }
@@ -1031,6 +1040,9 @@ h1
 .experts-table li.block:hover
 {
     background-color: rgba(255,255,255, 0.20);
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50990000,endColorstr=#50990000);
+    zoom: 1;
 }
 .experts-table li.block:hover .padd.hide,.experts-table li.block.active .padd.hide
 {
