@@ -492,7 +492,7 @@
         </div>
 
         <div class="contact-m-top-content" data-token="SOUSK">
-            <div class="float-left" style="width:50%">
+            <div class="float-left" style="width:50%;text-align: left">
                 <div class="contact-left-title">Get in touch with us</div>
                 <ul>
                     <li><a href="https://www.facebook.com/CayugaSoft" target="_blank"><div class="soc-color"></div></a></li>
