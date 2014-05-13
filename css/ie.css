@@ -82,3 +82,12 @@ button, input.button {position:relative;top:0.25em;}
     /* Good browsers */
     opacity: 1;
 }
+.nav-btn
+{
+    width:auto;
+    height:auto;
+}
+ul#mainnav li a
+{
+    text-align: left;
+}
