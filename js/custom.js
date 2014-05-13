@@ -95,20 +95,20 @@ jQuery(document).ready(function() {
 	pattiservices();	
 
 	// Clients Slider
-	jQuery("#owl-clients").owlCarousel({
-		items : 4,
-		navigation:true,
-		autoPlay: 5000,
-		slideSpeed : 1000
-	});
-	
-	// Twitter Slider
-	jQuery("#owl-twitter").owlCarousel({
-		autoHeight : true,
-		singleItem : true,
-		navigation:true,
-		slideSpeed : 1000
-	});			
+//	jQuery("#owl-clients").owlCarousel({
+//		items : 4,
+//		navigation:true,
+//		autoPlay: 5000,
+//		slideSpeed : 1000
+//	});
+//
+//	// Twitter Slider
+//	jQuery("#owl-twitter").owlCarousel({
+//		autoHeight : true,
+//		singleItem : true,
+//		navigation:true,
+//		slideSpeed : 1000
+//	});
 	
 	// Calculate Audio bar width	
 //	var audiowidth = jQuery('.audio-item').width();

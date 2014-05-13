@@ -60,7 +60,6 @@
                             if(responseText=="Mail send")
                             {
                                 $('form input[type=text],form input[type=email],form textarea').val("")
-
                             }
                             th.removeClass('disabled')
                         }
@@ -70,8 +69,6 @@
                 }
                 })
             /*end submit form*/
-
-
             var touch=!!('ontouchstart' in window);
             if(touch)
             {
@@ -125,7 +122,6 @@
     </script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-loader.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.parallax.js'></script>
-    <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-navscroll.js'></script>
     <?php $this->pageTitle="Mobile software development company in New York City";?>
     <meta name="description" content="Cayuga Mobile is a team of mobile software development experts, dedicated to creating knock-out mobile apps, at a reasonable cost">
     <meta name="keywords" content="NYC,New York City,mobile apps,mobile application development company,mobile application developer,mobile application development,mobile design,iphone app development,Android app development,Android app,iphone app,iOS app,mobile website development,iphone app development,iOS app development,Android app development">
@@ -172,7 +168,7 @@
 <!--                <div class="under-h1">-->
 <!--                    <h1 class="h1-margin-bottom">WE ARE CAYUGA MOBILE</h1>-->
 <!--                </div>-->
-                <div class="f-block-under-h1-text">We are a talanted group of mobile development experts, who can help take your idea from concept to the App Store or Play Store in just a few weeks!</div>
+                <div class="f-block-under-h1-text">We are a talented group of mobile development experts, who can help take your idea from concept to the App Store or Play Store in just a few weeks!</div>
             </div>
             <div class="clear"></div>
         </div>
@@ -210,12 +206,6 @@
                     </span>
                     <div class="f-block-under-h1-text second-under-h1">Cayuga Mobile does outstanding mobile software development work, at a competitive price. </div>
                 </div>
-<!--                <div class="aligncenter">-->
-<!--                    <div class="under-h1">-->
-<!--                        <h1 class="second-h1">WHY YOU SHOULD CHOOSE US?</h1>-->
-<!--                    </div>-->
-<!--                    <div class="f-block-under-h1-text second-under-h1">Cayuga Mobile does outstanding mobile software development work, at a competitive price. </div>-->
-<!--                </div>-->
                 <div class="second-table-block">
                     <div class="s-table-block-img">
                         <img src="images/many.png">
@@ -411,7 +401,7 @@
 
                     </div>
                 </div>
-                <div class="testimonial-item" >
+                <div class="testimonial-item">
                     <div class="mobile-hide">
                         <img src="images/quality-ass.png">
                         <div class="client-work-slide-title-padd">
@@ -473,7 +463,7 @@
                     <div>
                         <img src="images/eugeniy.png">
                         <br /><br />
-                        <div class="team-people-name">Eugen Polyansky</div>
+                        <div class="team-people-name">Eugene Polyansky</div>
                         <div class="team-people-position">COO and Co-Founde</div>
 
                     </div>
@@ -536,11 +526,10 @@
 </div><!--end wrapper-->
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.min.js?ver=3.50.0-2014.02.05'></script>
 
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/scripts.js?ver=3.7.2'></script>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/easing.js'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/hoverIntent.js?ver=r7'></script>
+<!--<script type='text/javascript' src='--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/hoverIntent.js?ver=r7'></script>-->
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/smoothScroll.js?ver=1.2.1'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.fitvids.js?ver=1.0.3'></script>
+<!--<script type='text/javascript' src='--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/jquery.fitvids.js?ver=1.0.3'></script>-->
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.scrollTo.js?ver=1.4.3'></script>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nav.js?ver=2.2.0'></script>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/retina.min.js?ver=1.1.0'></script>
@@ -550,41 +539,14 @@
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-nav.js?ver=1.31'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
-    //    var dt_parallax_qzLX0 = {"id":"fog"};
-    var dt_parallax_NNipg = {"id":"kbd"};
-    var dt_parallax_SxcFx = {"id":"bgo"};
-    var dt_parallax_xlmev = {"id":"fqf"};
-    var dt_parallax_bBvRH = {"id":"dvm"};
-    var dt_parallax_wDVKD = {"id":"ycd"};
-    var dt_parallax_U5TtP = {"id":"qxf"};
-    var dt_parallax_LItlP = {"id":"use"};
-    var dt_parallax_8kvft = {"id":"eqm"};
     var dt_parallax_QKv0G = {"id":"eft"};
-    var dt_parallax_8fmml = {"id":"xxe"};
-    var dt_parallax_8xMIt = {"id":"stf"};
-    var dt_parallax_UBVcT = {"id":"pzv"};
-    var dt_parallax_kqugZ = {"id":"lcr"};
-    var dt_parallax_XwHQc = {"id":"ner"};
-    var dt_parallax_KtEcK = {"id":"isk"};
-    var dt_parallax_L1TGJ = {"id":"ank"};
-    var dt_parallax_ghDkS = {"id":"zdy"};
-    var dt_parallax_KbbxJ = {"id":"uss"};
-    var dt_parallax_nUIem = {"id":"nwi"};
-    var dt_parallax_LPdwb = {"id":"kpd"};
-    var dt_parallax_tFFxK = {"id":"kcy"};
-    var dt_parallax_B5e7A = {"id":"wnn"};
-    var dt_parallax_54E2S = {"id":"gmj"};
-    var dt_parallax_jdUI3 = {"id":"yxs"};
-    var dt_parallax_KM7BV = {"id":"zih"};
     var dt_parallax_I2oUz = {"id":"pgd"};
-    var dt_parallax_vfDCA = {"id":"rgj"};
     var dt_parallax_SOUSK = {"id":"rvw"};
-    var dt_parallax_AVtOm = {"id":"fmq"};
     /* ]]> */
 </script>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-parallax.js?ver=1.0'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/waypoints.min.js?ver=4.0.2'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-waypoints.js?ver=2.0.4'></script>
+<!--<script type='text/javascript' src='--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/waypoints.min.js?ver=4.0.2'></script>-->
+<!--<script type='text/javascript' src='--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/custom-waypoints.js?ver=2.0.4'></script>-->
 
 <script type='text/javascript'>
     /* <![CDATA[ */
