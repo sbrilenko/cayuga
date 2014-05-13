@@ -499,7 +499,6 @@
                     <li><a href="http://www.linkedin.com/company/cayugasoft-technologies" target="_blank"><div class="soc-color in"></div></a></li>
                     <!--<li><a href="#"><div class="soc-color tw pad"></div></a></li>-->
                     <!--<li><a href="#"><div class="soc-color gp"></div></a></li>-->
-                    <li class="clear"></li>
                 </ul>
                 <div class="contact-left-text">
                     Cayugamobile.com<br />
