@@ -707,7 +707,8 @@ function makeArray( obj ) {
         this.addImage( elem );
       }
       // find children
-      var childElems = elem.querySelectorAll('img');
+//      var childElems = elem.querySelectorAll('img');
+        var childElems = elem.getElementsByTagName('li')
       // concat childElems to filterFound array
       for ( var j=0, jLen = childElems.length; j < jLen; j++ ) {
         var img = childElems[j];
