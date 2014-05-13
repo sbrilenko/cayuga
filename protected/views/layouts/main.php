@@ -120,6 +120,10 @@
 
 
     </script>
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" />
+    <![endif]-->
+
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-loader.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.parallax.js'></script>
     <?php $this->pageTitle="Mobile software development company in New York City";?>
