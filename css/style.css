@@ -1002,12 +1002,16 @@ h1
 }
 .experts-table li.block .padd.hide
 {
-    /* IE 8
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     -moz-opacity: 0;
     -khtml-opacity: 0;
-    opacity: 0;*/
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -1040,16 +1044,25 @@ h1
 }
 .experts-table li.block:hover .padd.hide,.experts-table li.block.active .padd.hide
 {
-/*
+
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     -moz-opacity: 1;
     -khtml-opacity: 1;
-    opacity: 1;*/
+    opacity: 1;
 }
 .experts-table li.block:hover .padd.visible,.experts-table li.block.active .padd.visible
 {
-    /*display: none;*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 .business-app
 {
