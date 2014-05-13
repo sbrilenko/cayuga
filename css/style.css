@@ -992,7 +992,7 @@ h1
     -o-transition: 0.5s;
     transition: 0.5s;
 }
-.experts-table li.block:hover .pos-rel
+.experts-table li.block:hover .pos-rel,.experts-table li.block.active .pos-rel
 {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -1050,6 +1050,16 @@ h1
     -moz-opacity: 1;
     -khtml-opacity: 1;
     opacity: 1;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .experts-table li.block:hover .padd.visible,.experts-table li.block.active .padd.visible
 {
@@ -1063,6 +1073,11 @@ h1
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .business-app
 {
