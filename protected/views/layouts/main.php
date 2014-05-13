@@ -207,7 +207,7 @@
                     <span>
                         <h1 class="under-h1">WHY YOU SHOULD CHOOSE US?</h1>
                     </span>
-                    <div class="f-block-under-h1-text second-under-h1">Cayuga Mobile does outstanding mobile software development work, at a competitive price. </div>
+                    <div class="f-block-under-h1-text second-under-h1">Cayuga Mobile does outstanding mobile software development work at a competitive price. </div>
                 </div>
                 <div class="second-table-block">
                     <div class="s-table-block-img">
@@ -215,7 +215,7 @@
                     </div>
                     <div class="s-table-block-text">
                         <div class="s-table-block-title">Why can we beat most others on price, while maintaining a strong quality level?</div>
-                        <div class="s-table-block-text-t">We have our own staff of over twenty people, providing us with both a cost advantage and a control advantage over other mobile development companies, who are frequently resource constrained.</div>
+                        <div class="s-table-block-text-t">We have our own staff of over twenty people, providing us with both cost and control advantages over other mobile development companies, who are frequently resource constrained.</div>
                     </div>
                 </div>
             </div>
@@ -467,11 +467,11 @@
                         <img src="images/eugeniy.png">
                         <br /><br />
                         <div class="team-people-name">Eugene Polyansky</div>
-                        <div class="team-people-position">COO and Co-Founde</div>
+                        <div class="team-people-position">COO and Co-Founder</div>
 
                     </div>
                     <div>
-                        <div class="client-work-slide-text" style="text-align: justify">Eugene is a design maven and dreamer. He has a rare combination of technology expertise and design expertise, having once worked as a creative designer in the Advertising industry.  He's also an experienced IT project manager and leads our development team. Today, Eugene spends much of his time on building our team and optimizing our development processes.</div>
+                        <div class="client-work-slide-text" style="text-align: justify">Eugene is a design maven and dreamer. He has a rare combination of technology and design expertise, having once worked as a creative designer in the Advertising industry.  He's also an experienced IT project manager and leads our development team. Today, Eugene spends much of his time on building our team and optimizing our development processes.</div>
 
                     </div>
                 </div>
