@@ -492,7 +492,7 @@
         </div>
 
         <div class="contact-m-top-content" data-token="SOUSK">
-            <div class="float-left" style="width:50%;text-align: left">
+            <div class="float-left alignleft pers-50">
                 <div class="contact-left-title">Get in touch with us</div>
                 <ul>
                     <li><a href="https://www.facebook.com/CayugaSoft" target="_blank"><div class="soc-color"></div></a></li>
@@ -508,7 +508,7 @@
                 </div>
             </div>
 
-            <div class="float-right" style="width:50%">
+            <div class="float-right pers-50">
                 <form action="/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form pos-rel" novalidate="novalidate" style="width:100%">
                     <div class="percent-one-half"> <br />
                             <span class="wpcf7-form-control-wrap your-name float-left">

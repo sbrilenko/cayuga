@@ -185,7 +185,10 @@
     {
         padding: 6px 10px;
     }
-
+    .pers-50
+    {
+        width:100%;
+    }
 }
 
 
@@ -500,6 +503,10 @@
     .follow-us-ul li.float-left.li-f-b-f.li-f-b-f{
         display: block;
     }
+    .pers-50
+    {
+        width:100%;
+    }
 }
 
 
@@ -811,6 +818,10 @@
     {
         margin:0 !important;
     }
+    .pers-50
+    {
+        width:100%;
+    }
 }
 
 
@@ -1054,6 +1065,10 @@
     #contact form .float-left
     {
         float:left;
+    }
+    .pers-50
+    {
+        width:100%;
     }
 }
 
