@@ -10,7 +10,7 @@
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/owl.carousel.css' type='text/css' media='all' />
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/responsive.css' type='text/css' media='all' />
     <link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/css/animate.min.css' type='text/css' media='all' />
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-migrate.min.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.queryloader2.js'></script>
     <script type='text/javascript'>
@@ -59,7 +59,7 @@
                                         {
                                             text: "OK",
                                             click: function() {
-                                                $( this ).dialog( "destroy" );
+                                                $( this ).dialog( "close" );
                                             }
                                         }
                                     ]
@@ -80,7 +80,7 @@
                                         {
                                             text: "OK",
                                             click: function() {
-                                                $( this ).dialog( "destroy" );
+                                                $( this ).dialog( "close" );
                                             }
                                         }
                                     ]
@@ -98,7 +98,7 @@
                                         {
                                             text: "OK",
                                             click: function() {
-                                                $( this ).dialog( "destroy" );
+                                                $( this ).dialog( "close" );
                                             }
                                         }
                                     ]
