@@ -10,7 +10,7 @@ class AjaxController extends CController {
         $youremail = Yii::app()->request->getPost('your-email');
         $yourmessage = Yii::app()->request->getPost('your-message');
 
-        $to  = "mike@cayugasoft.com, eugene@cayugasoft.com, katerina@cayugasoft.com";
+        $to  = "mike@cayugasoft.com, eugene@cayugasoft.com, katerina@cayugasoft.com, info@cayugamobile.com";
 
         $subject = "New contact request from Cayugamobile.com";
 

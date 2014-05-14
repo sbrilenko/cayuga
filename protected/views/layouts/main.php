@@ -50,15 +50,59 @@
                             var error="";
                             if($.trim($('form input[name=your-name]').val())==="" || $.trim($('form input[name=your-email]').val())==="" || $.trim($('form textarea').val())==="")
                             {
-                                alert('Please fill in all fields')
+                                $("#dialog").empty().append("Please fill in all fields").dialog({
+                                    dialogClass:'dialog',
+                                    position: { my: "center",at: "center",of: window},
+                                    draggable:false,
+                                    modal:true,
+                                    buttons: [
+                                        {
+                                            text: "OK",
+                                            click: function() {
+                                                $( this ).dialog( "destroy" );
+                                            }
+                                        }
+                                    ]
+                                });
+                                th.removeClass('disabled')
                                 return false;
                             }
                         },
                         success: function(responseText) {
-                            alert(responseText)
                             if(responseText=="Mail send")
                             {
+                                $("#dialog").empty().append("Thanks for your message.  We'll get back to you within 24 hours").dialog({
+                                    dialogClass:'dialog',
+                                    position: { my: "center",at: "center",of: window},
+                                    draggable:false,
+                                    modal:true,
+                                    buttons: [
+                                        {
+                                            text: "OK",
+                                            click: function() {
+                                                $( this ).dialog( "destroy" );
+                                            }
+                                        }
+                                    ]
+                                });
                                 $('form input[type=text],form input[type=email],form textarea').val("")
+                            }
+                            else
+                            {
+                                $("#dialog").empty().append("Message not sending").dialog({
+                                    dialogClass:'dialog',
+                                    position: { my: "center",at: "center",of: window },
+                                    draggable:false,
+                                    modal:true,
+                                    buttons: [
+                                        {
+                                            text: "OK",
+                                            click: function() {
+                                                $( this ).dialog( "destroy" );
+                                            }
+                                        }
+                                    ]
+                                });
                             }
                             th.removeClass('disabled')
                         }
@@ -113,7 +157,7 @@
                 }
             }
         })
-        $(window).resize(function(){ arr_top=scrollMenu();$(window).trigger('scroll')})
+        $(window).resize(function(){ arr_top=scrollMenu();$(window).trigger('scroll');$("#dialog").dialog("option", "position", "center");})
 
 
 
@@ -508,7 +552,7 @@
             </div>
 
             <div class="float-right pers-50">
-                <form action="/#wpcf7-f69-p82-o1" method="post" class="wpcf7-form pos-rel" novalidate="novalidate" style="width:100%">
+                <form method="post" class="wpcf7-form pos-rel" novalidate="novalidate" style="width:100%">
                     <div class="percent-one-half"> <br />
                             <span class="wpcf7-form-control-wrap your-name float-left">
                                 <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Name" /></span><br />
@@ -527,19 +571,19 @@
 
 
 </div><!--end wrapper-->
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.min.js?ver=3.50.0-2014.02.05'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.min.js'></script>
 
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/easing.js'></script>
 <!--<script type='text/javascript' src='--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/hoverIntent.js?ver=r7'></script>-->
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/smoothScroll.js?ver=1.2.1'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/smoothScroll.js'></script>
 <!--<script type='text/javascript' src='--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/jquery.fitvids.js?ver=1.0.3'></script>-->
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.scrollTo.js?ver=1.4.3'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nav.js?ver=2.2.0'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/retina.min.js?ver=1.1.0'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/owl.carousel.min.js?ver=1.31'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.isotope.min.js?ver=1.0'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.scrollTo.js'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nav.js'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/retina.min.js'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/owl.carousel.min.js'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.isotope.min.js'></script>
 
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-nav.js?ver=1.31'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-nav.js'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var dt_parallax_QKv0G = {"id":"eft"};
@@ -547,7 +591,7 @@
     var dt_parallax_SOUSK = {"id":"rvw"};
     /* ]]> */
 </script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-parallax.js?ver=1.0'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-parallax.js'></script>
 <!--<script type='text/javascript' src='--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/waypoints.min.js?ver=4.0.2'></script>-->
 <!--<script type='text/javascript' src='--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/custom-waypoints.js?ver=2.0.4'></script>-->
 
@@ -557,7 +601,9 @@
     var dt_testimonials_dTfaN2 = {"id":"pqu2"};
     /* ]]> */
 </script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-testimonials.js?ver=1.0'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-testimonials.js'></script>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui-1.10.4.min.js'></script>
+<link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/css/jquery-ui-1.10.4.min.css' type='text/css' media='all' />
 <style>
     @font-face {
         font-family: SourceSansPro-Black;
@@ -656,6 +702,6 @@
     /*url(css/fonts/SourceSansPro-SemiboldIt.svg#SourceSansPro-SemiboldIt) format(svg);*/
     /*}*/
 </style>
-
+<div id='dialog'></div>
 </body>
 </html>
