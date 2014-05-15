@@ -10,7 +10,7 @@ jQuery(window).load( function() {
 		var settingObj = window['dt_parallax_' + token];
 
 		if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {	
-			jQuery('.parallax-bag-'+settingObj.id+'').parallax("50%", 0.4, false);
+			jQuery('.parallax-bag-'+settingObj.id+'').parallax("50%", 0, false); //0.4
 		}
 		
 		// Parallax Fix for Mobile Devices
