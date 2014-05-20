@@ -467,7 +467,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mobile-hide">
-                        <img src="images/quality-ass.png">
+                        <img src="images/quality-ass.png" style="cursor:pointer;">
                         <div class="client-work-slide-title-padd">
                             <div class="client-work-slide-title">Social Game</div>
                         </div>
@@ -477,7 +477,7 @@
                     </div>
                     <div>
                         <div class="mobile-show">
-                            <img src="images/gamepad.png">
+                            <img src="images/gamepad.png" style="cursor:pointer;">
                             <div class="client-work-slide-title-padd">
                                 <div class="client-work-slide-title">Social Game</div>
                             </div>
