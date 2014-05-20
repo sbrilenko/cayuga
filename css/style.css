@@ -1241,5 +1241,37 @@ h1
 {
     border:1px solid #49cbcd !important;
 }
+#hidden
+{
+    display:none;
+    overflow: hidden;
+}
+#hidden .hidden
+{
+    background-color:#eee;padding:40px;
+}
+.hidden-image
+{
+    background:url('../images/HeadRightGames_logo.png') center no-repeat;
+    height:167px;
+}
+.hidden-text
+{
+    font-size: 22px;
+    line-height: 30px;
+    color: #838383;
+    font-family:SourceSansPro-Regular;
+    margin-top:25px;
+}
+.hidden-text a,.hidden-text a:visited
+{
+
+    color:#f7931e;
+    text-decoration:underline;
+}
+.hidden-text a:hover
+{
+    text-decoration:none;
+}
 
 

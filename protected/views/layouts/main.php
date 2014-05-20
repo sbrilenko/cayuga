@@ -37,6 +37,23 @@
         arr_top=[];
         $(document).ready(function()
         {
+            $('.mobile-show img,.mobile-hide img').on('click',function()
+            {
+                if($('#hidden').is(':visible'))
+                {
+                    $('#hidden').slideToggle(500);
+                }
+                else
+                {
+                    $("body").animate({
+                        scrollTop: $('#before-hidden').offset().top
+                    }, function(){
+                        $('#hidden').slideToggle(500);
+                    });
+                }
+
+
+            })
             /*submit form*/
             $('form input[type=submit]').on('click',function()
             {
@@ -477,6 +494,20 @@
 </div>
 <!-- end client work -->
 <div class="clear"></div>
+
+<div id="before-hidden"></div>
+<div id="hidden" class="lighter-overlay client-work-padd">
+    <div class="centered-wrapper">
+        <div class="hidden">
+            <div class="hidden-image"></div>
+            <div class="hidden-text">
+                <a href="http://headrightgames.com/" target="_blank">HeadRight Games</a> asked Cayugasoft to help them create a new mobile word game, with social networking features and gameplay with friends. Cayugasoft created a project team consisting of a front-end developer, a back-end developer, and a project manager/tester.  The game is highly addictive, and will be released for iOS shortly, with an Android version to follow soon.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
 
 <!-- our team -->
 <div id="team" class="lighter-overlay client-work-padd">
