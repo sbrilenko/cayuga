@@ -28,16 +28,38 @@ jQuery(window).load(function() {
 		var $div = jQuery(this);
 		var token = $div.data('token');
 
-		var settingObj = window['dt_testimonials_' + token];	
+		var settingObj = window['dt_testimonials_' + token];
+        if(settingObj.id=="pqu")
+        {
+            jQuery("#owl-testimonials-"+settingObj.id+"").owlCarousel({
+                autoHeight : true,
+                singleItem : true,
+                slideSpeed : 1000,
+                navigation : true, // Show next and prev buttons
+                pagination : false,
+                lazyLoad : true,
+                beforeMove: function()
+                {
+                    var projects_owl=$("#projects").find('.owl-carousel'),current=projects_owl.data('owlCarousel').currentItem
+                    if(current==0)
+                    {
+                        $("#hidden").slideUp();
+                    }
+                }
+            });
+        }
+        else
+        {
+            jQuery("#owl-testimonials-"+settingObj.id+"").owlCarousel({
+                autoHeight : true,
+                singleItem : true,
+                slideSpeed : 1000,
+                navigation : true, // Show next and prev buttons
+                pagination : false,
+                lazyLoad : true
+            });
+        }
 
-		jQuery("#owl-testimonials-"+settingObj.id+"").owlCarousel({
-			autoHeight : true,
-			singleItem : true,
-			slideSpeed : 1000,
-            navigation : true, // Show next and prev buttons
-            pagination : false,
-            lazyLoad : true
-		});
 
 	});
     function slide_one()
