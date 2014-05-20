@@ -37,23 +37,23 @@
         arr_top=[];
         $(document).ready(function()
         {
-            $('.mobile-show img,.mobile-hide img').on('click',function()
-            {
-                if($('#hidden').is(':visible'))
-                {
-                    $('#hidden').slideToggle(500);
-                }
-                else
-                {
-                    $("body").animate({
-                        scrollTop: $('#before-hidden').offset().top
-                    }, function(){
-                        $('#hidden').slideToggle(500);
-                    });
-                }
-
-
-            })
+//            $('.mobile-show img,.mobile-hide img').on('click',function()
+//            {
+//                if($('#hidden').is(':visible'))
+//                {
+//                    $('#hidden').slideToggle(500);
+//                }
+//                else
+//                {
+//                    $("body").animate({
+//                        scrollTop: $('#before-hidden').offset().top
+//                    }, function(){
+//                        $('#hidden').slideToggle(500);
+//                    });
+//                }
+//
+//
+//            })
             /*submit form*/
             $('form input[type=submit]').on('click',function()
             {
@@ -467,7 +467,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mobile-hide">
-                        <img src="images/quality-ass.png" style="cursor:pointer;">
+                        <img src="images/quality-ass.png">
                         <div class="client-work-slide-title-padd">
                             <div class="client-work-slide-title">Social Game</div>
                         </div>
@@ -477,7 +477,7 @@
                     </div>
                     <div>
                         <div class="mobile-show">
-                            <img src="images/gamepad.png" style="cursor:pointer;">
+                            <img src="images/gamepad.png">
                             <div class="client-work-slide-title-padd">
                                 <div class="client-work-slide-title">Social Game</div>
                             </div>
@@ -494,8 +494,6 @@
 </div>
 <!-- end client work -->
 <div class="clear"></div>
-
-<div id="before-hidden"></div>
 <div id="hidden" class="lighter-overlay client-work-padd">
     <div class="centered-wrapper">
         <div class="hidden">
