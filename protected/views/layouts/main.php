@@ -483,7 +483,7 @@
         <div class="hidden">
             <div class="hidden-image"></div>
             <div class="hidden-text">
-                <a href="http://headrightgames.com/" target="_blank">HeadRight Games</a> asked Cayugasoft to help them create a new mobile word game, with social networking features and gameplay with friends. Cayugasoft created a project team consisting of a front-end developer, a back-end developer, and a project manager/tester.  The game is highly addictive, and will be released for iOS shortly, with an Android version to follow soon.
+                <a href="http://headrightgames.com/" target="_blank">HeadRight Games</a> asked us to help them create a new mobile word game, with social networking features and gameplay with friends. We created a project team consisting of a front-end developer, a back-end developer, and a project manager/tester.
             </div>
         </div>
     </div>
