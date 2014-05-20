@@ -10,7 +10,7 @@
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/owl.carousel.css' type='text/css' media='all' />
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/responsive.css' type='text/css' media='all' />
     <link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/css/animate.min.css' type='text/css' media='all' />
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js'></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-migrate.min.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.queryloader2.js'></script>
     <script type='text/javascript'>
@@ -57,6 +57,8 @@
             /*submit form*/
             $('form input[type=submit]').on('click',function()
             {
+                var buttonArray={}
+                buttonArray["Ok"]=function() { $( this ).dialog( "close" );}
                 var th=$(this);
                 if(!th.hasClass('disabled'))
                 {
@@ -72,20 +74,16 @@
                                     position: { my: "center",at: "center",of: window},
                                     draggable:false,
                                     modal:true,
-                                    buttons: [
-                                        {
-                                            text: "OK",
-                                            click: function() {
-                                                $( this ).dialog( "close" );
-                                            }
-                                        }
-                                    ]
+                                    buttons: buttonArray
                                 });
+
                                 th.removeClass('disabled')
                                 return false;
                             }
                         },
                         success: function(responseText) {
+                            var buttonArray={}
+                            buttonArray["Ok"]=function() { $( this ).dialog( "close" );}
                             if(responseText=="Mail send")
                             {
                                 $("#dialog").empty().append("Thanks for your message.  We'll get back to you within 24 hours").dialog({
@@ -93,14 +91,7 @@
                                     position: { my: "center",at: "center",of: window},
                                     draggable:false,
                                     modal:true,
-                                    buttons: [
-                                        {
-                                            text: "OK",
-                                            click: function() {
-                                                $( this ).dialog( "close" );
-                                            }
-                                        }
-                                    ]
+                                    buttons:buttonArray
                                 });
                                 $('form input[type=text],form input[type=email],form textarea').val("")
                             }
@@ -111,14 +102,7 @@
                                     position: { my: "center",at: "center",of: window },
                                     draggable:false,
                                     modal:true,
-                                    buttons: [
-                                        {
-                                            text: "OK",
-                                            click: function() {
-                                                $( this ).dialog( "close" );
-                                            }
-                                        }
-                                    ]
+                                    buttons: buttonArray
                                 });
                             }
                             th.removeClass('disabled')
@@ -174,7 +158,7 @@
                 }
             }
         })
-        $(window).resize(function(){ arr_top=scrollMenu();$(window).trigger('scroll');$("#dialog").dialog("option", "position", "center");})
+        $(window).resize(function(){ arr_top=scrollMenu();$(window).trigger('scroll');$("#dialog").dialog({position: { my: "center",at: "center",of: window}});})
 
 
 
