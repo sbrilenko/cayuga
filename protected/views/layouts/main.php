@@ -58,7 +58,7 @@
             $('form input[type=submit]').on('click',function()
             {
                 var buttonArray={}
-                buttonArray["Ok"]=function() { $( this ).dialog( "close" );}
+                buttonArray["Ok"]=function() { $( this ).dialog( "destroy" );}
                 var th=$(this);
                 if(!th.hasClass('disabled'))
                 {
@@ -83,7 +83,7 @@
                         },
                         success: function(responseText) {
                             var buttonArray={}
-                            buttonArray["Ok"]=function() { $( this ).dialog( "close" );}
+                            buttonArray["Ok"]=function() { $( this ).dialog( "destroy" );}
                             if(responseText=="Mail send")
                             {
                                 $("#dialog").empty().append("Thanks for your message.  We'll get back to you within 24 hours").dialog({
@@ -158,7 +158,7 @@
                 }
             }
         })
-        $(window).resize(function(){ arr_top=scrollMenu();$(window).trigger('scroll');$("#dialog").dialog({position: { my: "center",at: "center",of: window}});})
+        $(window).resize(function(){ arr_top=scrollMenu();$(window).trigger('scroll');if($("#dialog").parent().hasClass('dialog')) { $("#dialog").dialog({position: { my: "center",at: "center",of: window}}); }})
 
 
 
