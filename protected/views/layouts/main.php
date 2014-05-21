@@ -451,7 +451,8 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mobile-hide">
-                        <img src="images/quality-ass.png">
+                            <img src="images/HeadRightGames_logo_mini.png">
+<!--                        <img src="images/quality-ass.png">-->
                         <div class="client-work-slide-title-padd">
                             <div class="client-work-slide-title">Social Game</div>
                         </div>
@@ -461,13 +462,14 @@
                     </div>
                     <div>
                         <div class="mobile-show">
-                            <img src="images/gamepad.png">
+                            <img src="images/HeadRightGames_logo_mini.png">
+<!--                            <img src="images/gamepad.png">-->
                             <div class="client-work-slide-title-padd">
                                 <div class="client-work-slide-title">Social Game</div>
                             </div>
                         </div>
 
-                        <div class="client-work-slide-text">A mobile word game that encourages people to socialize and play with friends. Users can participate in tournaments or challenge their friends to a game. Prizes and social media sharing make the game viral and fun. The iOS version will be out soon, followed by an Android version.</div>
+                        <div class="client-work-slide-text"><a href="http://headrightgames.com/" target="_blank">HeadRight Games</a> asked us to help them create a new mobile word game, with social networking features and gameplay with friends. A mobile word game that encourages people to socialize and play with friends. Users can participate in tournaments or challenge their friends to a game. Prizes and social media sharing make the game viral and fun. The iOS version will be out soon, followed by an Android version.</div>
 
                     </div>
                 </div>
@@ -478,18 +480,17 @@
 </div>
 <!-- end client work -->
 <div class="clear"></div>
-<div id="hidden" class="lighter-overlay client-work-padd">
-    <div class="centered-wrapper">
-        <div class="hidden">
-            <div class="hidden-image"></div>
-            <div class="hidden-text">
-                <a href="http://headrightgames.com/" target="_blank">HeadRight Games</a> asked us to help them create a new mobile word game, with social networking features and gameplay with friends. We created a project team consisting of a front-end developer, a back-end developer, and a project manager/tester.
-            </div>
-        </div>
-    </div>
-</div>
-<div class="clear"></div>
-
+<!--<div id="hidden" class="lighter-overlay client-work-padd">-->
+<!--    <div class="centered-wrapper">-->
+<!--        <div class="hidden">-->
+<!--            <div class="hidden-image"></div>-->
+<!--            <div class="hidden-text">-->
+<!--                <a href="http://headrightgames.com/" target="_blank">HeadRight Games</a> asked us to help them create a new mobile word game, with social networking features and gameplay with friends. We created a project team consisting of a front-end developer, a back-end developer, and a project manager/tester.-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="clear"></div>-->
 
 <!-- our team -->
 <div id="team" class="lighter-overlay client-work-padd">

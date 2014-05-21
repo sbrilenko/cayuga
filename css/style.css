@@ -1262,13 +1262,13 @@ h1
     font-family:SourceSansPro-Regular;
     margin-top:25px;
 }
-.hidden-text a,.hidden-text a:visited
+.client-work-slide-text a,.client-work-slide-text a:visited,.hidden-text a,.hidden-text a:visited
 {
 
     color:#f7931e;
     text-decoration:underline;
 }
-.hidden-text a:hover
+.hidden-text a:hover,.client-work-slide-text a:hover
 {
     text-decoration:none;
 }
