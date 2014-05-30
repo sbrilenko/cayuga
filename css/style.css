@@ -1152,6 +1152,10 @@ h1
     text-align: center;
     padding: 40px 0 61px 0;
 }
+.client-work-slide-title-padd.app
+{
+    padding: 40px 0 40px 0;
+}
 .client-work-slide-title
 {
     font-family:SourceSansPro-Regular;
@@ -1271,6 +1275,10 @@ h1
 .hidden-text a:hover,.client-work-slide-text a:hover
 {
     text-decoration:none;
+}
+.app-button
+{
+    margin:15px 0 0 0;
 }
 
 

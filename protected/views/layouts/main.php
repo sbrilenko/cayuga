@@ -453,9 +453,11 @@
                     <div class="mobile-hide">
                             <img src="images/HeadRightGames_logo_mini.png">
 <!--                        <img src="images/quality-ass.png">-->
-                        <div class="client-work-slide-title-padd">
-                            <div class="client-work-slide-title">Social Game</div>
+                        <div class="client-work-slide-title-padd app">
+                            <div class="client-work-slide-title">Word Pops! Social Game</div>
+                            <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
                         </div>
+
                     </div>
                     <div>
                         <img src="images/phone-game.png">
@@ -464,12 +466,14 @@
                         <div class="mobile-show">
                             <img src="images/HeadRightGames_logo_mini.png">
 <!--                            <img src="images/gamepad.png">-->
-                            <div class="client-work-slide-title-padd">
-                                <div class="client-work-slide-title">Social Game</div>
+                            <div class="client-work-slide-title-padd app">
+                                <div class="client-work-slide-title">Word Pops! Social Game</div>
+                                <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
                             </div>
+
                         </div>
 
-                        <div class="client-work-slide-text"><a href="http://headrightgames.com/" target="_blank">HeadRight Games</a> asked us to help them create a new mobile word game, with social networking features and gameplay with friends. Users can participate in tournaments or challenge their friends to a game. Prizes and social media sharing make the game viral and fun. The iOS version will be out soon, followed by an Android version.</div>
+                        <div class="client-work-slide-text"><a href="http://headrightgames.com/" target="_blank">HeadRight Games</a>  asked us to help them create a new mobile word game Word Pops!, with social networking features and gameplay with friends. Users can participate in tournaments or challenge their friends to a game. Prizes and social media sharing make the game viral and fun. The iOS version will be out soon, followed by an Android version. The iOS version is out on the App Store for iPhone and iPad</div>
 
                     </div>
                 </div>
