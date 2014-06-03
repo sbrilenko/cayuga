@@ -21,6 +21,13 @@ $(window).resize(function()
 })
 // Testimonials Slider
 jQuery(window).load(function() {
+    $(".video").on('click',function()
+    {
+        if($("#hidden .hidden iframe").length==0)
+        { $("#hidden .hidden").append('<iframe src="//www.youtube.com/embed/ScHCxXdtyGs" frameborder="0" allowfullscreen></iframe>'); $("#hidden").slideDown();}
+        else { $("#hidden").slideUp(function(){$("#hidden .hidden").empty() });}
+
+    })
     //owl.next()
     var slider1=false,slider2=false;
 	jQuery('.testimonials-slider[id^="owl-testimonials"]').each( function() { 	
@@ -29,25 +36,26 @@ jQuery(window).load(function() {
 		var token = $div.data('token');
 
 		var settingObj = window['dt_testimonials_' + token];
-//        if(settingObj.id=="pqu")
-//        {
-//            jQuery("#owl-testimonials-"+settingObj.id+"").owlCarousel({
-//                autoHeight : true,
-//                singleItem : true,
-//                slideSpeed : 1000,
-//                navigation : true, // Show next and prev buttons
-//                pagination : false,
-//                lazyLoad : true,
-//                beforeMove: function()
-//                {
-//                    var projects_owl=$("#projects").find('.owl-carousel'),current=projects_owl.data('owlCarousel').currentItem
-//                    if(current==0)
-//                    {
-//                        $("#hidden").slideUp();
-//                    }
-//                }
-//            });
-//        }
+        if(settingObj.id=="pqu")
+        {
+            jQuery("#owl-testimonials-"+settingObj.id+"").owlCarousel({
+                autoHeight : true,
+                singleItem : true,
+                slideSpeed : 1000,
+                navigation : true, // Show next and prev buttons
+                pagination : false,
+                lazyLoad : true,
+                beforeMove: function()
+                {
+                    var projects_owl=$("#projects").find('.owl-carousel'),current=projects_owl.data('owlCarousel').currentItem
+                    if(current==1 || current==0)
+                    {
+                        $("#hidden .hidden").empty();
+                        $("#hidden").slideUp();
+                    }
+                }
+            });
+        }
         jQuery("#owl-testimonials-"+settingObj.id+"").owlCarousel({
                 autoHeight : true,
                 singleItem : true,

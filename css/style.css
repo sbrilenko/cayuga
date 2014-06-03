@@ -1248,10 +1248,12 @@ h1
 #hidden
 {
     overflow: hidden;
+    display: none;
 }
 #hidden .hidden
 {
-    background-color:#eee;padding:40px;
+    /*background-color:#eee;*/
+    padding:40px;
 }
 .hidden-image
 {
@@ -1279,6 +1281,11 @@ h1
 .app-button
 {
     margin:15px 0 0 0;
+}
+iframe
+{
+    height:640px;
+    width:100%;
 }
 
 

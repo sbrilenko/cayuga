@@ -477,6 +477,32 @@
 
                     </div>
                 </div>
+                <!-- warrior -->
+                <div class="testimonial-item">
+                    <div class="mobile-hide">
+                        <img src="images/warrior-icon.jpg">
+                        <div class="client-work-slide-title-padd app">
+<!--                            <div class="client-work-slide-title">Word Pops! Social Game</div>-->
+                            <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="images/phone-warrior.png">
+                    </div>
+                    <div>
+                        <div class="mobile-show">
+                            <img src="images/warrior-icon.jpg">
+                            <div class="client-work-slide-title-padd app">
+<!--                                <div class="client-work-slide-title">Word Pops! Social Game</div>-->
+                                <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
+                            </div>
+                        </div>
+
+                        <div class="client-work-slide-text">CayugaMobile helped Next Gauge, Inc. to build their CDL Warrior product. CDL Warrior is a mobile communication and productivity platform for commercial truck drivers and fleets. By leveraging the smartphones and tablets drivers already own, CDL Warrior plans to create the TripAdvisor for the trucking industry. The app is live on Google Play, and a web application for trucking fleets will be in production shortly. Check out the video presentation <a class="video" style="cursor: pointer;" >here</a>.</div>
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="clear"></div>
@@ -495,6 +521,14 @@
 <!--    </div>-->
 <!--</div>-->
 <!--<div class="clear"></div>-->
+<div id="hidden" class="lighter-overlay client-work-padd">
+    <div class="centered-wrapper">
+        <div class="hidden">
+
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
 
 <!-- our team -->
 <div id="team" class="lighter-overlay client-work-padd">
