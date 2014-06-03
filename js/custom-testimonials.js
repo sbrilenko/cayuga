@@ -48,7 +48,7 @@ jQuery(window).load(function() {
                 beforeMove: function()
                 {
                     var projects_owl=$("#projects").find('.owl-carousel'),current=projects_owl.data('owlCarousel').currentItem
-                    if(current==1 || current==0)
+                    if(current==2 || current==0)
                     {
                         $("#hidden .hidden").empty();
                         $("#hidden").slideUp();
