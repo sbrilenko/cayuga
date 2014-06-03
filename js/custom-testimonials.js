@@ -24,7 +24,7 @@ jQuery(window).load(function() {
     $(".video").on('click',function()
     {
         if($("#hidden .hidden iframe").length==0)
-        { $("#hidden .hidden").append('<iframe src="//www.youtube.com/embed/ScHCxXdtyGs" frameborder="0" allowfullscreen></iframe>'); $("#hidden").slideDown();}
+        { $("#hidden .hidden").append('<iframe src="//www.youtube.com/embed/ScHCxXdtyGs" frameborder="0" allowfullscreen></iframe>'); $("#hidden").slideDown(function(){$(window).scrollTo($("#hidden").offset().top)});}
         else { $("#hidden").slideUp(function(){$("#hidden .hidden").empty() });}
 
     })
