@@ -427,6 +427,58 @@
 
         <div class="testimonials-carousel">
             <div id="owl-testimonials-pqu" class="owl-carousel testimonials-slider" data-token="dTfaN">
+                <!-- warrior -->
+                <div class="testimonial-item">
+                    <div class="mobile-hide">
+                        <img src="images/warrior-icon.jpg">
+                        <div class="client-work-slide-title-padd app">
+                            <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="images/phone-warrior.png">
+                    </div>
+                    <div>
+                        <div class="mobile-show">
+                            <img src="images/warrior-icon.jpg">
+                            <div class="client-work-slide-title-padd app">
+                                <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
+                            </div>
+                        </div>
+
+                        <div class="client-work-slide-text">CayugaMobile helped Next Gauge, Inc. to build their <a href="http://www.cdlwarrior.com/" target="_blank">CDL Warrior</a> product. CDL Warrior is a mobile communication and productivity platform for commercial truck drivers and fleets. By leveraging the smartphones and tablets drivers already own, CDL Warrior plans to create the TripAdvisor for the trucking industry. The app is live on Google Play, and a web application for trucking fleets will be in production shortly. Check out the video presentation <a class="video" style="cursor: pointer;" >here</a>.</div>
+
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="mobile-hide">
+                        <img src="images/HeadRightGames_logo_mini.png">
+                        <!--                        <img src="images/quality-ass.png">-->
+                        <div class="client-work-slide-title-padd app">
+                            <div class="client-work-slide-title">Word Pops! Social Game</div>
+                            <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="images/phone-game.png">
+                    </div>
+                    <div>
+                        <div class="mobile-show">
+                            <img src="images/HeadRightGames_logo_mini.png">
+                            <!--                            <img src="images/gamepad.png">-->
+                            <div class="client-work-slide-title-padd app">
+                                <div class="client-work-slide-title">Word Pops! Social Game</div>
+                                <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
+                            </div>
+
+                        </div>
+
+                        <div class="client-work-slide-text"><a href="http://headrightgames.com/" target="_blank">HeadRight Games</a>  asked us to help them create a new mobile word game Word Pops!, with social networking features and gameplay with friends. Users can participate in tournaments or challenge their friends to a game. Prizes and social media sharing make the game viral and fun. The iOS version is out on the App Store for iPhone and iPad.</div>
+
+                    </div>
+                </div>
                 <div class="testimonial-item">
                     <div class="mobile-hide">
                         <img src="images/quality-ass.png">
@@ -449,60 +501,7 @@
 
                     </div>
                 </div>
-                <!-- warrior -->
-                <div class="testimonial-item">
-                    <div class="mobile-hide">
-                        <img src="images/warrior-icon.jpg">
-                        <div class="client-work-slide-title-padd app">
-                            <!--                            <div class="client-work-slide-title">Word Pops! Social Game</div>-->
-                            <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
-                        </div>
 
-                    </div>
-                    <div>
-                        <img src="images/phone-warrior.png">
-                    </div>
-                    <div>
-                        <div class="mobile-show">
-                            <img src="images/warrior-icon.jpg">
-                            <div class="client-work-slide-title-padd app">
-                                <!--                                <div class="client-work-slide-title">Word Pops! Social Game</div>-->
-                                <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
-                            </div>
-                        </div>
-
-                        <div class="client-work-slide-text">CayugaMobile helped Next Gauge, Inc. to build their <a href="http://www.cdlwarrior.com/" target="_blank">CDL Warrior</a> product. CDL Warrior is a mobile communication and productivity platform for commercial truck drivers and fleets. By leveraging the smartphones and tablets drivers already own, CDL Warrior plans to create the TripAdvisor for the trucking industry. The app is live on Google Play, and a web application for trucking fleets will be in production shortly. Check out the video presentation <a class="video" style="cursor: pointer;" >here</a>.</div>
-
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="mobile-hide">
-                            <img src="images/HeadRightGames_logo_mini.png">
-<!--                        <img src="images/quality-ass.png">-->
-                        <div class="client-work-slide-title-padd app">
-                            <div class="client-work-slide-title">Word Pops! Social Game</div>
-                            <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
-                        </div>
-
-                    </div>
-                    <div>
-                        <img src="images/phone-game.png">
-                    </div>
-                    <div>
-                        <div class="mobile-show">
-                            <img src="images/HeadRightGames_logo_mini.png">
-<!--                            <img src="images/gamepad.png">-->
-                            <div class="client-work-slide-title-padd app">
-                                <div class="client-work-slide-title">Word Pops! Social Game</div>
-                                <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
-                            </div>
-
-                        </div>
-
-                        <div class="client-work-slide-text"><a href="http://headrightgames.com/" target="_blank">HeadRight Games</a>  asked us to help them create a new mobile word game Word Pops!, with social networking features and gameplay with friends. Users can participate in tournaments or challenge their friends to a game. Prizes and social media sharing make the game viral and fun. The iOS version is out on the App Store for iPhone and iPad.</div>
-
-                    </div>
-                </div>
 
             </div>
         </div>
