@@ -48,11 +48,11 @@ jQuery(window).load(function() {
                 beforeMove: function()
                 {
                     var projects_owl=$("#projects").find('.owl-carousel'),current=projects_owl.data('owlCarousel').currentItem
-                    if(current==1 || current==2)
-                    {
-                        $("#hidden .hidden").empty();
-                        $("#hidden").slideUp();
-                    }
+//                    if(current==1 || current==2)
+//                    {
+//                        $("#hidden .hidden").empty();
+//                        $("#hidden").slideUp();
+//                    }
                 }
             });
         }

@@ -447,7 +447,7 @@
                             </div>
                         </div>
 
-                        <div class="client-work-slide-text">CayugaMobile helped Next Gauge, Inc. to build their <a href="http://www.cdlwarrior.com/" target="_blank">CDL Warrior</a> product. CDL Warrior is a mobile communication and productivity platform for commercial truck drivers and fleets. By leveraging the smartphones and tablets drivers already own, CDL Warrior plans to create the TripAdvisor for the trucking industry. The app is live on Google Play, and a web application for trucking fleets will be in production shortly. Check out the video presentation <a class="video" style="cursor: pointer;" >here</a>.</div>
+                        <div class="client-work-slide-text">CayugaMobile helped Next Gauge, Inc. to build their <a href="http://www.cdlwarrior.com/" target="_blank">CDL Warrior</a> product. CDL Warrior is a mobile communication and productivity platform for commercial truck drivers and fleets. By leveraging the smartphones and tablets drivers already own, CDL Warrior plans to create the TripAdvisor for the trucking industry. The app is live on Google Play, and a web application for trucking fleets will be in production shortly.</div>
 
                     </div>
                 </div>
@@ -521,13 +521,14 @@
 <!--    </div>-->
 <!--</div>-->
 <!--<div class="clear"></div>-->
-<div id="hidden" class="lighter-overlay client-work-padd">
-    <div class="centered-wrapper">
-        <div class="hidden">
 
-        </div>
-    </div>
-</div>
+<!--<div id="hidden" class="lighter-overlay client-work-padd">-->
+<!--    <div class="centered-wrapper">-->
+<!--        <div class="hidden">-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="clear"></div>
 
 <!-- our team -->
