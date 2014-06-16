@@ -60,7 +60,8 @@ function pattinav_extend() {
 	//Scroll Nav
 	jQuery('#mainnav').onePageNav({
 		currentClass: 'current',
-		filter: ':not(.external)'
+		filter: ':not(.external)',
+        changeHash: true
 	});
 
 
