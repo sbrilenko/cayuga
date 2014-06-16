@@ -37,6 +37,24 @@
         arr_top=[];
         $(document).ready(function()
         {
+            $(document).on('click','.m-collapsed a',function(){
+                var th=$(this)
+                if(th.hasClass("more"))
+                {
+                    th.parent().prev().css({height: "auto"})
+                    th.hide();
+                    $(".hide").show();
+                    $(".b-read-all").addClass("none")
+                }
+                else{
+                    th.parent().prev().css({height:"150px"})
+                    $("a",th.parent()).removeAttr("style")
+                    $(".b-read-all").removeClass("none")
+                }
+
+
+                return false
+            })
 //            $('.mobile-show img,.mobile-hide img').on('click',function()
 //            {
 //                if($('#hidden').is(':visible'))
@@ -194,6 +212,7 @@
                     <li class="menu-item current-menu-item"><a href="#services" class="external"><span>Services</span></a></li>
                     <li class="menu-item current-menu-item"><a href="#projects" class="external"><span>Projects</span></a></li>
                     <li class="menu-item current-menu-item"><a href="#team" class="external"><span>Team</span></a></li>
+                    <li class="menu-item current-menu-item"><a href="#blog" class="external"><span>Blog</span></a></li>
                     <li class="menu-item current-menu-item"><a href="#contact" class="external"><span>Contact</span></a></li>
                 </ul>
 
@@ -429,22 +448,19 @@
             <div id="owl-testimonials-pqu" class="owl-carousel testimonials-slider" data-token="dTfaN">
                 <!-- warrior -->
                 <div class="testimonial-item">
-                    <div class="mobile-hide">
-                        <img src="images/warrior-icon.jpg">
-                        <div class="client-work-slide-title-padd app">
-                            <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
-                        </div>
+                    <div class="mobile-hide ">
+                        <img src="images/warrior-icon.png">
 
                     </div>
                     <div>
-                        <img src="images/phone-warrior.png">
+                        <img src="images/phone-warrior-white.png">
+                        <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
+
                     </div>
                     <div>
-                        <div class="mobile-show">
-                            <img src="images/warrior-icon.jpg">
-                            <div class="client-work-slide-title-padd app">
-                                <div class="app-button"><a href="https://play.google.com/store/apps/details?id=cdlwarrior.cdlwarrior" target="_blank"><img src="images/en_generic_rgb_wo_60.png"/></a></div>
-                            </div>
+                        <div class="mobile-show client-work-slide-title-padd app">
+                            <img src="images/warrior-icon.png">
+
                         </div>
 
                         <div class="client-work-slide-text">CayugaMobile helped Next Gauge, Inc. to build their <a href="http://www.cdlwarrior.com/" target="_blank">CDL Warrior</a> product. CDL Warrior is a mobile communication and productivity platform for commercial truck drivers and fleets. By leveraging the smartphones and tablets drivers already own, CDL Warrior plans to create the TripAdvisor for the trucking industry. The app is live on Google Play, and a web application for trucking fleets will be in production shortly.</div>
@@ -453,25 +469,30 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mobile-hide">
-                        <img src="images/HeadRightGames_logo_mini.png">
                         <!--                        <img src="images/quality-ass.png">-->
-                        <div class="client-work-slide-title-padd app">
-                            <div class="client-work-slide-title">Word Pops! Social Game</div>
-                            <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
+                        <div class="client-work-slide-title-padd app parent-pops-title-with-image">
+                            <div class="pops-title-with-image">
+                                <div class="client-work-slide-title big-bold">Word Pops!</div>
+                                <div class="client-work-slide-title big-font">Social Game</div>
+                            </div>
                         </div>
-
+                        <div class="clear"></div>
                     </div>
                     <div>
                         <img src="images/phone-game.png">
+                        <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
                     </div>
                     <div>
                         <div class="mobile-show">
-                            <img src="images/HeadRightGames_logo_mini.png">
                             <!--                            <img src="images/gamepad.png">-->
-                            <div class="client-work-slide-title-padd app">
-                                <div class="client-work-slide-title">Word Pops! Social Game</div>
-                                <div class="app-button"><a href="https://itunes.apple.com/us/app/word-pops!/id810609168?mt=8" target="_blank"><img src="images/logo_appstore.gif"/></a></div>
+                            <div class="client-work-slide-title-padd app parent-pops-title-with-image">
+
+                                <div class="pops-title-with-image">
+                                    <div class="client-work-slide-title big-bold">Word Pops!</div>
+                                    <div class="client-work-slide-title big-font">Social Game</div>
+                                </div>
                             </div>
+                            <div class="clear"></div>
 
                         </div>
 
@@ -532,7 +553,7 @@
 <div class="clear"></div>
 
 <!-- our team -->
-<div id="team" class="lighter-overlay client-work-padd">
+<div id="team" class="lighter-overlay client-work-padd" style="background-color: #fff;">
     <div class="centered-wrapper">
         <div class="aligncenter client-work-title-padd">
                 <span>
@@ -577,6 +598,60 @@
         <div class="clear"></div>
     </div>
 </div>
+
+<!-- blog -->
+<div id="blog" class="lighter-overlay client-work-padd blog-background margin-bottom">
+    <div class="centered-wrapper">
+        <div class="aligncenter client-work-title-padd">
+                <span>
+                    <h1 class="under-h1">BLOG</h1>
+                </span>
+            <!-- <div class="f-block-under-h1-text second-under-h1">Experienced mobile development leaders, with backgrounds in consumer and enterprise applications</div>-->
+        </div>
+
+        <div>
+            <ul>
+               <li>
+                   <div class="blog-title blog-name">Native Development vs. Cross Platform Tools </div>
+                   <div class="blog-text client-work-slide-text blog-short-text">
+                       <p>When we’re in discussions with a client about developing a new mobile app, it’s usually not long before the question comes up: “What technologies do you want to use for this app?”  Some clients may have already selected the technology they prefer, and normally that settles the question—we use what they want to use.  But when the client doesn’t have a strong point of view on this, they normally ask for our recommendations.</p>
+                       <br />
+                       <p>Sometimes I get a chance to talk with other mobile development shops, and I’ve found that some of them consider the choice of technologies to be a religious matter.  Some say they WILL NEVER use a cross-platform development tool.  EVER!”  Cross-platform mobile development tools (e.g., PhoneGap, Xamarin) allow developers to create an app and, with minor modifications, release it for various mobile platforms, such as iOS and Android.  So what is this baggage that cross-platform tools are being asked to carry around?  Why are these purists so fixed in their positions against these tools?  We’ve found that there are many projects where cross-platform tools are an appropriate choice.  Although there are some cons, as well.</p>
+                       <br />
+                       <p>PROS of CROSS-PLATFORM TOOLS</p>
+                       <br />
+                       <p class="indent">- Reduced Development Cost (and Time) – Cross-platform tools let the developers reuse much of their code for various mobile platforms, so assuming you want an app that works on both iOS and Android (and possibly Windows Phone) then there’s less development work to do using a cross platform tool, as opposed to native tools.  Using cross platform tools, we find we can typically save 70% of the development work on a second mobile platform, having developed the first one in a cross platform tool (although your mileage can vary, depending the app).</p>
+                       <p class="indent">- Ease of Finding Developers – There’s a global shortage of mobile developers right now.  You probably didn’t need me to tell you that.  One nice thing about Xamarin is that it’s relatively easy to take a .Net developer and turn them into a Xamarin developer, because the tools are similar.  So this helps us, as a mobile development company, find staff.  But it also helps you, our client, since if a key developer quits, finding a replacement is not as difficult as finding a native iOS or Android developer.   Other cross platform tools are based on well known web technologies such as HTML, CSS and Javascript.  So again, it becomes relatively easy for web developers to pick these up an learn them.</p>
+                       <br />
+                       <p>CONS of CROSS-PLATFORM TOOLS</p>
+                       <br />
+                       <p class="indent">- Not all Native Features are Accessible – Xamarin has a good record for “zero-day” support for new features from Apple and Google.  But there’s still some concern with other cross-platform tools, that Apple will announce some great new feature and your developers can’t access it for a while, until the tools vendor gets around to supporting the new feature.</p>
+                       <p class="indent">- Worse Performance – Cross-platform tools might be slower than native tools because the tools generate code that may not be as efficient as the code a really good native developer might write.</p>
+                       <p class="indent">- User Experience Not Tuned for Different Devices – If you consider what some experts say about the user experience approach to Android vs. iOS, you’ll see that they recommend putting the app controls in totally different locations on the screen (see this great article by Josh Clark: http://www.creativebloq.com/design/designing-touch-2123037).  If you creat an iOS app using a cross-platform tool, and put out an Android version, and try to minimize extra development effort, you’ll be going against some of the advice the experts give.  On the other hand, you can probably still invest some additional development effort and adhere to the experts’ recommendations.</p>
+                       <br />
+                       <p>OK, so given all of this, how should you choose the technology for your app?  It depends on your business requirements.    We feel that cross platform tools are a reasonable choice if:</p>
+                       <br />
+                       <p class="indent">- You’re cost sensitive and want the savings of cross-platform tools</p>
+                       <p class="indent">- You definitely plan to release the app on multiple platforms, now or in the future</p>
+                       <p class="indent">- You are developing an application that has “normal” business app functionality, which isn’t pushing the envelope of “bleeding edge” design, visual effects, and speed of performance.  Actually, we find that most apps fit into this category.  Consider a typical business app.  You want to get some data from a server, allow a user to view it on a mobile device, edit it, and save it back on the server.  This is going to be really useful for your users, but you’re not really pushing the envelope of what’s possible, these days.  So a cross-platform tool is probably great for your needs.  For example, we developed the CDL Warrior app using Xamarin, and it works great.  This allowed our client to focus on Android initially (lots of truckers use Android phones), while delivering an iOS version of the app later on, with only a minimum of incremental effort for iOS.</p>
+                       <br />
+                       <p>Conversely, if you’re developing something that is really performance intensive and which, therefore, requires the maximum of developer control, you should consider native development.  It’s going to cost you a lot more to develop, but if your application really demands this then you have no choice.</p>
+                       <br />
+                       <p>Meanwhile, if you’re creating a game and need “bleeding edge” graphics for it, you can still use a cross-platform tool--Unity.  Unity is a tool that’s great for game development, and you can publish the game to multiple platforms: iOS, Windows, Web, Android, etc.  Each platform requires a little extra work for development and QA, but really, it’s pretty reasonable.</p>
+                       <br />
+                       <p>So in summary, at Cayuga Mobile, we don’t agree with some in the industry, who say that you need to use native tools, and nothing else.  We feel it’s worth taking the time to think about your application and think about which tools are best, and select one that offers the best mix of capabilities and cost for you.</p>
+                   </div>
+                   <div class="b-read-all m-collapsed">
+                       <a href="#" class="read-all-link b-read-full more"><b>More</b>↓</a>
+                       <a href="#" class="read-all-link b-read-full hide"><b>Hide</b>↑</a>
+                   </div>
+               </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- end blog -->
 
 
 <div id="contact" class="parallax-bag-pgd scrollto"  data-token="I2oUz">

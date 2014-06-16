@@ -781,6 +781,22 @@
     .client-work-slide-title-padd {
         padding: 15px 0 40px 0;
     }
+    .client-work-slide-title.big-font
+    {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .client-work-slide-title.big-bold
+    {
+        font-family:SourceSansPro-Bold;
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .parent-pops-title-with-image
+    {
+        width: 331px;
+        margin: 0 auto;
+    }
     .testimonial-item>div img {
         width:50%;
     }
@@ -1084,6 +1100,22 @@
     {
         height:406px;
         width:100%;
+    }
+    .client-work-slide-title.big-font
+    {
+        font-size: 43px;
+        line-height: 49px;
+    }
+    .client-work-slide-title.big-bold
+    {
+        font-family:SourceSansPro-Bold;
+        font-size: 43px;
+        line-height: 49px;
+    }
+    .parent-pops-title-with-image
+    {
+        width: 372px;
+        margin: 0 auto;
     }
 }
 
