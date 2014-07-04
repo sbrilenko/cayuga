@@ -58,14 +58,9 @@ function pattinav_extend() {
 			navb.slideUp(function(){nava.find("i").removeClass("active") })
 		} else {
             nava.find("i").addClass("active")
-            nava.find("i").trigger("mouseup")
 			navb.slideDown()
 		}
 	});
-    nava.find("i").on("mouseup",function()
-    {
-
-    })
     $("li a",navb).click(function()
     {
         nava.find("i").removeClass("active")
