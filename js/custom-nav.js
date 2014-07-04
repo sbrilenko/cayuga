@@ -55,7 +55,7 @@ function pattinav_extend() {
     nava.on("mouseover",function()
     {
         nava.find('i').addClass("active");
-    }).on("mouseup",function()
+    }).on("mouseout",function()
     {
         nava.find('i').removeClass("active");
     })
