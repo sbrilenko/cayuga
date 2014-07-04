@@ -57,12 +57,15 @@ function pattinav_extend() {
 		if (navb.is(":visible")) {
 			navb.slideUp(function(){nava.find("i").removeClass("active") })
 		} else {
-            if(nava.find("i").hasClass("active"))
-                nava.find("i").removeClass("active")
-            else nava.find("i").addClass("active")
+            nava.find("i").addClass("active")
+            nava.find("i").trigger("mouseup")
 			navb.slideDown()
 		}
 	});
+    nava.find("i").on("mouseup",function()
+    {
+
+    })
     $("li a",navb).click(function()
     {
         nava.find("i").removeClass("active")
