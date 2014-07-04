@@ -449,6 +449,9 @@ h6 {
     /* No support for these yet, use at own risk */
     -o-user-select: none;
     user-select: none;
+    rule:properties;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 .float-left {
     float: left;
