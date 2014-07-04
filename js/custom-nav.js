@@ -51,18 +51,14 @@ function pattinav_extend() {
             navb.addClass("mobile");
 			navb.removeClass("desktop")
 		}
-
-    nava.on('touchend',function()
-    {
-        return false
-    })
 	// Click Tweak
 	nava.click(function (e) {
         e.preventDefault()
 		if (navb.is(":visible")) {
 			navb.slideUp(function(){nava.find("i").removeClass("active") })
 		} else {
-            navb.slideDown(function(){nava.find("i").addClass("active")})
+            nava.find("i").addClass("active")
+            navb.slideDown()
 		}
 	});
 
