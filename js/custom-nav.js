@@ -55,7 +55,7 @@ function pattinav_extend() {
     nava.on("mouseover",function()
     {
         nava.find('i').addClass("active");
-    }).on("mouseend",function()
+    }).on("mouseup",function()
     {
         nava.find('i').removeClass("active");
     })
@@ -65,7 +65,8 @@ function pattinav_extend() {
         if (navb.is(":visible")) {
             if(touch)
             {
-                navb.slideUp(function(){nava.empty().append('<i class="fa fa-bars"></i>') })
+                nava.empty().append('<i class="fa fa-bars"></i>')
+                navb.slideUp()
             }
             else
             {
