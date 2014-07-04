@@ -114,6 +114,17 @@
                                 $('form input[type=text],form input[type=email],form textarea').val("")
                             }
                             else
+                            if(responseText=="Not valid")
+                            {
+                                $("#dialog").empty().append("Email not valid").dialog({
+                                    dialogClass:'dialog',
+                                    position: { my: "center",at: "center",of: window},
+                                    draggable:false,
+                                    modal:true,
+                                    buttons:buttonArray
+                                });
+                            }
+                            else
                             {
                                 $("#dialog").empty().append("Message not sending").dialog({
                                     dialogClass:'dialog',

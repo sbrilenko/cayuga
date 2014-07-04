@@ -1,4 +1,5 @@
 <?php
+
 class AjaxController extends CController {
     public function filters() {
         return array(
@@ -9,12 +10,14 @@ class AjaxController extends CController {
         $yourname = Yii::app()->request->getPost('your-name');
         $youremail = Yii::app()->request->getPost('your-email');
         $yourmessage = Yii::app()->request->getPost('your-message');
+        $validator = new CEmailValidator;
+        if($validator->validateValue($youremail))
+        {
+            $to  = "mike@cayugasoft.com, eugene@cayugasoft.com, katerina@cayugasoft.com, info@cayugamobile.com";
 
-        $to  = "mike@cayugasoft.com, eugene@cayugasoft.com, katerina@cayugasoft.com, info@cayugamobile.com";
+            $subject = "New contact request from Cayugamobile.com";
 
-        $subject = "New contact request from Cayugamobile.com";
-
-        $message = 'New contact request from Cayugamobile.com<br />
+            $message = 'New contact request from Cayugamobile.com<br />
                         <br />
                         Name:    '.$yourname.'<br />
                         Email:   '.$youremail.'<br />
@@ -23,16 +26,20 @@ class AjaxController extends CController {
                         Cayuga Mobile
         ';
 
-        $headers  = "Content-type: text/html; charset=windows-1251 \r\n";
-        $headers .= "From: Cayuga Mobile <mike@cayugasoft.com>\r\n";
+            $headers  = "Content-type: text/html; charset=windows-1251 \r\n";
+            $headers .= "From: Cayuga Mobile <mike@cayugasoft.com>\r\n";
 
-        if(mail($to, $subject, $message, $headers))
-        {
-            echo "Mail send";
+            if(mail($to, $subject, $message, $headers))
+            {
+                echo "Mail send";
+            }
+            else
+            {
+                echo "Error";
+            }
         }
         else
-        {
-            echo "Error";
-        }
+            echo "Not valid";
+
     }
 }
