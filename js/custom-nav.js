@@ -58,7 +58,7 @@ function pattinav_extend() {
         if (navb.is(":visible")) {
             if(touch)
             {
-                navb.slideUp(function(){nava.replaceWith('<a class="nav-btn"><i class="fa fa-bars"></i></a>') })
+                navb.slideUp(function(){nava.empty().append('<i class="fa fa-bars"></i>') })
             }
             else
             {
@@ -67,7 +67,7 @@ function pattinav_extend() {
 		} else {
             if(touch)
             {
-                nava.replaceWith('<a class="nav-btn active"><i class="fa fa-bars"></i></a>')
+                nava.empty().append('<i class="fa fa-bars active"></i>')
                 navb.slideDown()
             }
             else
