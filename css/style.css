@@ -438,6 +438,17 @@ h6 {
     width:24px;
     height:24px;
     display: block;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+
+    /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;
+    rule:properties;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+    -webkit-touch-callout: none
 }
 .nav-btn i:hover,.nav-btn i.active
 {
@@ -450,8 +461,9 @@ h6 {
     -o-user-select: none;
     user-select: none;
     rule:properties;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-user-select: none;
-    -webkit-touch-callout: none;
+    -webkit-touch-callout: none
 }
 .float-left {
     float: left;
