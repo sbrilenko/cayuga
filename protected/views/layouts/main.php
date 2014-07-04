@@ -513,7 +513,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="mobile-hide">
-                        <img src="images/quality-ass.png">
+                        <img src="images/quality-ass.png" style="width:auto;">
                         <div class="client-work-slide-title-padd">
                             <div class="client-work-slide-title">App Builder</div>
                         </div>
@@ -585,7 +585,7 @@
                     </div>
                     <div>
 
-                        <div class="client-work-slide-text" style="text-align: justify">Mike has been involved with New York area venture-backed software companies since the late 1990's, as a VP of Product, and CTO. He still remembers when VCs were (briefly) valuing companies based on a multiple of the number of engineers they had.
+                        <div class="client-work-slide-text">Mike has been involved with New York area venture-backed software companies since the late 1990's, as a VP of Product, and CTO. He still remembers when VCs were (briefly) valuing companies based on a multiple of the number of engineers they had.
                             Today, Mike's interests include mobile business applications (especially in the area of logistics and supply-chain management), mobile gaming, and the Internet of Things.</div>
 
                     </div>
@@ -600,7 +600,7 @@
 
                     </div>
                     <div>
-                        <div class="client-work-slide-text" style="text-align: justify">Eugene is a design maven and dreamer. He has a rare combination of technology and design expertise, having once worked as a creative designer in the Advertising industry.  He's also an experienced IT project manager and leads our development team. Today, Eugene spends much of his time on building our team and optimizing our development processes.</div>
+                        <div class="client-work-slide-text">Eugene is a design maven and dreamer. He has a rare combination of technology and design expertise, having once worked as a creative designer in the Advertising industry.  He's also an experienced IT project manager and leads our development team. Today, Eugene spends much of his time on building our team and optimizing our development processes.</div>
 
                     </div>
                 </div>

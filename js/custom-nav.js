@@ -29,33 +29,42 @@ function pattinav_extend() {
 		var nava = jQuery(".nav-btn"),
 			navb = jQuery("#navigation"),
 			wind = jQuery(window).width();
+            $('#navigation').hide();
+            nava.find("i").removeClass("active")
 		if (wind > 1023) {
-			navb.addClass("desktop");
+            navb.addClass("desktop");
 			navb.removeClass("mobile")
 		}
 		if (wind < 1023) {
-			navb.addClass("mobile");
+            navb.addClass("mobile");
 			navb.removeClass("desktop")
 		}
     });
 			
 		if (wind > 1023) {
-			navb.addClass("desktop");
+            nava.find("i").removeClass("active")
+            navb.addClass("desktop");
 			navb.removeClass("mobile")
 		}
 		if (wind < 1023) {
-			navb.addClass("mobile");
+            nava.find("i").removeClass("active")
+            navb.addClass("mobile");
 			navb.removeClass("desktop")
 		}
 
 	// Click Tweak
 	nava.click(function () {
 		if (navb.is(":visible")) {
-			navb.slideUp()
+			navb.slideUp(function(){nava.find("i").removeClass("active") })
 		} else {
+            nava.find("i").addClass("active")
 			navb.slideDown()
 		}
 	});
+    $("li a",navb).click(function()
+    {
+        nava.find("i").removeClass("active")
+    })
 
 	//Scroll Nav
 	jQuery('#mainnav').onePageNav({
