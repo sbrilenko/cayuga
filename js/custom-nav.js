@@ -53,7 +53,8 @@ function pattinav_extend() {
 		}
 
 	// Click Tweak
-	nava.click(function () {
+	nava.click(function (e) {
+        e.preventDefault()
 		if (navb.is(":visible")) {
 			navb.slideUp(function(){nava.find("i").removeClass("active") })
 		} else {
@@ -61,8 +62,9 @@ function pattinav_extend() {
 			navb.slideDown()
 		}
 	});
-    $("li a",navb).click(function()
+    $("li a",navb).click(function(e)
     {
+        e.preventDefault()
         nava.find("i").removeClass("active")
     })
 
