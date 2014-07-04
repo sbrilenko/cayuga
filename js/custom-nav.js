@@ -52,6 +52,10 @@ function pattinav_extend() {
 			navb.removeClass("desktop")
 		}
 
+    nava.on('touchend',function()
+    {
+        return false
+    })
 	// Click Tweak
 	nava.click(function (e) {
         e.preventDefault()
@@ -61,6 +65,7 @@ function pattinav_extend() {
             navb.slideDown(function(){nava.find("i").addClass("active")})
 		}
 	});
+
     $("li a",navb).click(function(e)
     {
         e.preventDefault()
