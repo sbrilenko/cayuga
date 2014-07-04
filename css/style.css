@@ -450,7 +450,7 @@ h6 {
     -webkit-user-select: none;
     -webkit-touch-callout: none
 }
-.nav-btn i:hover,.nav-btn i.active
+.nav-btn i.active
 {
     background-position: 0 -24px;
     -webkit-user-select: none;  /* Chrome all / Safari all */

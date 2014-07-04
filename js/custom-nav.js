@@ -52,6 +52,13 @@ function pattinav_extend() {
 			navb.removeClass("desktop")
 		}
 	// Click Tweak
+    nava.on("mouseover",function()
+    {
+        nava.find('i').addClass("active");
+    }).on("mouseend",function()
+    {
+        nava.find('i').removeClass("active");
+    })
 	nava.click(function (e) {
         e.preventDefault()
         var touch=!!('ontouchstart' in window);
