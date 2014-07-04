@@ -54,11 +54,28 @@ function pattinav_extend() {
 	// Click Tweak
 	nava.click(function (e) {
         e.preventDefault()
-		if (navb.is(":visible")) {
-			navb.slideUp(function(){nava.find("i").removeClass("active") })
+        var touch=!!('ontouchstart' in window);
+        if (navb.is(":visible")) {
+            if(touch)
+            {
+                navb.slideUp(function(){nava.replaceWith('<a class="nav-btn"><i class="fa fa-bars"></i></a>') })
+            }
+            else
+            {
+                navb.slideUp(function(){nava.find("i").removeClass("active") })
+            }
 		} else {
-            nava.find("i").addClass("active")
-            navb.slideDown()
+            if(touch)
+            {
+                nava.replaceWith('<a class="nav-btn active"><i class="fa fa-bars"></i></a>')
+                navb.slideDown()
+            }
+            else
+            {
+                nava.find("i").addClass("active")
+                navb.slideDown()
+            }
+
 		}
 	});
 
