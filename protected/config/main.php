@@ -8,6 +8,12 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Cayuga Mobile',
+    'defaultController' => 'site',             // контроллер по умолчанию
+    'language'          => 'en',               // язык по умолчанию
+    'sourceLanguage'    => 'en',
+    'theme'             => 'new',          // тема оформления по умолчанию
+    'charset'           => 'UTF-8',
+    'preload'           => defined('YII_DEBUG'),
 
 	// preloading 'log' component
 	'preload'=>array('log'),
