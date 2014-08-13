@@ -11,7 +11,6 @@ return array(
     'defaultController' => 'site',             // контроллер по умолчанию
     'language'          => 'en',               // язык по умолчанию
     'sourceLanguage'    => 'en',
-    'theme'             => 'new',          // тема оформления по умолчанию
     'charset'           => 'UTF-8',
     'preload'           => defined('YII_DEBUG'),
 
