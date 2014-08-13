@@ -2,6 +2,14 @@
 
 class SiteController extends Controller
 {
+    /**
+     * subscribe action
+     *
+    */
+    public function actionSubscribe()
+    {
+        $this->render('subscribe');
+    }
 	/**
 	 * Declares class-based actions.
 	 */
