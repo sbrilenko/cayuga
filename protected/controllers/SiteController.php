@@ -6,13 +6,23 @@ class SiteController extends Controller
      * subscribe action
      *
     */
-    public function actionSubscribe()
+    public function actionUnsubscribe()
     {
         $this->render('subscribe');
     }
 	/**
 	 * Declares class-based actions.
 	 */
+    public function accessRules()
+    {
+        return array(
+            array('allow',
+                'controllers'=>array('site','ajax'),
+                'actions'=>array('error','form'),
+            ),
+            array('deny'),
+        );
+    }
 	public function actions()
 	{
 		return array(

@@ -41,25 +41,26 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+            'errorHandler'=>array(
+                'errorAction' => 'site/error'
+            ),
 		),
 		// uncomment the following to enable URLs in path-format
 
 		'urlManager'=>array(
-			'urlFormat'=>'path',
-			'rules'=>array(
-//				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-//				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-//				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-//                '/<action:\w+>'                => 'site/<action>',
-                '/' => '/view',
-                '//' => '/',
-                '/' => '/',
+            'urlFormat'=>'path',
+            'showScriptName'=>false,
+            'caseSensitive'=>false,
+            'rules'=>array(
+				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                '/<action:\w+>'                => 'site/<action>',
 			),
 		),
-
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
+//		'db'=>array(
+//			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+//		),
 		// uncomment the following to use a MySQL database
 		/*
 		'db'=>array(
