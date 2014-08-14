@@ -1395,4 +1395,28 @@ iframe
 {
     margin-bottom: 30px;
 }
+#header.menu-response,#header.menu-response .centered-wrapper,#header.menu-response #navigation, #header.menu-response ul#mainnav
+{
+    height:100%;
+}
+#header.menu-response .percent-one-fourth
+{
+    height: 13%;
+}
+#header.menu-response .percent-three-fourth
+{
+    height: 77%;
+}
+#header.menu-response ul#mainnav > li
+{
+    height: 14.28%;
+}
+#header.menu-response ul#mainnav > li.current-menu-item > a span
+{
+    padding: 0;
+}
+
+
+
+
 

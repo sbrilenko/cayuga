@@ -4,6 +4,7 @@ function pattinav_extend() {
 
 
 	jQuery("#navigation a").click(function () {
+        var navb = jQuery("#navigation")
 		if (navb.is(":visible") && navb.hasClass("mobile")) {
 			navb.slideUp();
 		}
@@ -29,26 +30,30 @@ function pattinav_extend() {
 		var nava = jQuery(".nav-btn"),
 			navb = jQuery("#navigation"),
 			wind = jQuery(window).width();
-            $('#navigation').hide();
+            navb.hide();
+            $("#header").removeClass("menu-response")
             nava.find("i").removeClass("active")
 		if (wind > 1023) {
+            $("#header").removeClass("menu-response")
             navb.addClass("desktop");
 			navb.removeClass("mobile")
 		}
 		if (wind < 1023) {
             navb.addClass("mobile");
+            $("#header").removeClass("menu-response")
 			navb.removeClass("desktop")
 		}
     });
-			
 		if (wind > 1023) {
             nava.find("i").removeClass("active")
             navb.addClass("desktop");
+            $("#header").removeClass("menu-response")
 			navb.removeClass("mobile")
 		}
 		if (wind < 1023) {
             nava.find("i").removeClass("active")
             navb.addClass("mobile");
+            $("#header").removeClass("menu-response")
 			navb.removeClass("desktop")
 		}
 	// Click Tweak
@@ -66,21 +71,24 @@ function pattinav_extend() {
             if(touch)
             {
                 nava.empty().append('<i class="fa fa-bars"></i>')
-                navb.slideUp()
+                navb.slideUp(function(){$("#header").removeClass("menu-response")})
+
             }
             else
             {
-                navb.slideUp(function(){nava.find("i").removeClass("active") })
+                navb.slideUp(function(){nava.find("i").removeClass("active");$("#header").removeClass("menu-response") })
             }
 		} else {
             if(touch)
             {
                 nava.empty().append('<i class="fa fa-bars active"></i>')
+                $("#header").addClass("menu-response")
                 navb.slideDown()
             }
             else
             {
                 nava.find("i").addClass("active")
+                $("#header").addClass("menu-response")
                 navb.slideDown()
             }
 

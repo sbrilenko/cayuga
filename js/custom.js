@@ -28,7 +28,7 @@ jQuery(window).load(function() {
 
 
 
-//Effect for Scrolltop Button	
+//Effect for Scrolltop Button
 //function totop() {
 //	jQuery('.totop').hover(function(){
 //	jQuery(this).animate({bottom:"-5px"},{queue:false,duration:60}); },
@@ -51,7 +51,7 @@ function pattiservices() {
 //			jQuery(this).parent().siblings().children('.dt-service-hover').fadeOut();
 //			jQuery('.dt-service-item').addClass('under-opacity');
 //	});
-	
+
 //	jQuery('.dt-service-hover').click(function() {
 //		jQuery(this).fadeOut();
 //		jQuery('.dt-service-item').removeClass('under-opacity');
@@ -92,7 +92,7 @@ jQuery(document).ready(function() {
 
 	//Run Functions
 //	totop();
-	pattiservices();	
+	pattiservices();
 
 	// Clients Slider
 //	jQuery("#owl-clients").owlCarousel({
@@ -109,13 +109,13 @@ jQuery(document).ready(function() {
 //		navigation:true,
 //		slideSpeed : 1000
 //	});
-	
-	// Calculate Audio bar width	
+
+	// Calculate Audio bar width
 //	var audiowidth = jQuery('.audio-item').width();
 //	jQuery('.jp-progress').css({'width': audiowidth-250});
 
-	
-	
+
+
 	// In and Out Effect
 //	jQuery('.item-on-hover').hover(function(){
 //		jQuery(this).animate({ opacity: 1 }, 200);
@@ -124,8 +124,8 @@ jQuery(document).ready(function() {
 //		jQuery(this).animate({ opacity: 0 }, 200);
 //		jQuery(this).children('.hover-link, .hover-image, .hover-video').animate({ opacity: 0 }, 200);
 //	});
-	
-	
+
+
 	// Portfolio Grid In and Out Effect //
 //	jQuery('.grid-item-on-hover').hover(function(){
 //		jQuery(this).animate({ opacity: 0.9 }, 200);
@@ -133,8 +133,8 @@ jQuery(document).ready(function() {
 //			jQuery(this).animate({ opacity: 0 }, 200);
 //		});
 
-	
-	// Video in Posts		
+
+	// Video in Posts
 //	jQuery(".post-video").fitVids();
 
 	// Fix for Overlapping Iframes
@@ -152,11 +152,11 @@ jQuery(document).ready(function() {
 		      "wmode" : "Opaque"
 		    });
 		  }
-	});			
-	
+	});
+
 	// PrettyPhoto
 //	jQuery("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: false});
-	
+
 
 	// Appending style classes to submit comment button
 	jQuery('input#submit_my_comment').addClass('button orange');
