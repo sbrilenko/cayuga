@@ -99,6 +99,7 @@ function pattinav_extend() {
     {
         e.preventDefault()
         nava.find("i").removeClass("active")
+        $("#header").removeClass("menu-response")
     })
 
 	//Scroll Nav
