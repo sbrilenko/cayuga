@@ -103,5 +103,10 @@ jQuery(window).load(function() {
         slide_one()
     })
     $(window).resize(function(){slide_one()})
-
+    //if #projects
+    if(window.location.hash==="#projects")
+        slider2=true;
+    //if #team
+    if(window.location.hash==="#team")
+        slider1=true;
 });
