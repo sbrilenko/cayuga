@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/favicon.ico" />
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/style.css' type='text/css' media='all' />
+    <?php
+    if(Yii::app()->controller->action->id!=="unsubscribe")
+    {
+    ?>
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/owl.carousel.css' type='text/css' media='all' />
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/responsive.css' type='text/css' media='all' />
     <link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/css/animate.min.css' type='text/css' media='all' />
@@ -199,6 +203,7 @@
 
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-loader.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.parallax.js'></script>
+    <?php } ?>
     <?php $this->pageTitle="Mobile software development company in New York City";?>
     <meta name="description" content="Cayuga Mobile is a team of mobile software development experts, dedicated to creating knock-out mobile apps, at a reasonable cost">
     <meta name="keywords" content="NYC,New York City,mobile apps,mobile application development company,mobile application developer,mobile application development,mobile design,iphone app development,Android app development,Android app,iphone app,iOS app,mobile website development,iphone app development,iOS app development,Android app development">
@@ -207,10 +212,12 @@
 
 <body  class="home vc_responsive">
 
-
 <?php echo $content; ?>
 
-
+<?php
+if(Yii::app()->controller->action->id!=="unsubscribe")
+{
+?>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.min.js'></script>
 
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/easing.js'></script>
@@ -253,14 +260,6 @@
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Black.ttf) format(truetype),
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Black.svg#SourceSansPro-Black) format(svg);
     }
-    /*@font-face {*/
-    /*font-family: SourceSansPro-BlackIt;*/
-    /*src: url(css/fonts/SourceSansPro-BlackIt.eot);*/
-    /*src: url(css/fonts/SourceSansPro-BlackIt.eot?#iefix) format(embedded-opentype),*/
-    /*url(css/fonts/SourceSansPro-BlackIt.woff) format(woff),*/
-    /*url(css/fonts/SourceSansPro-BlackIt.ttf) format(truetype),*/
-    /*url(css/fonts/SourceSansPro-BlackIt.svg#SourceSansPro-BlackIt) format(svg);*/
-    /*}*/
     @font-face {
         font-family: SourceSansPro-Bold;
         src: url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Bold.eot);
@@ -269,38 +268,6 @@
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Bold.ttf) format(truetype),
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold) format(svg);
     }
-    /*@font-face {*/
-    /*font-family: SourceSansPro-BoldIt;*/
-    /*src: url(css/fonts/SourceSansPro-BoldIt.eot);*/
-    /*src: url(css/fonts/SourceSansPro-BoldIt.eot?#iefix) format(embedded-opentype),*/
-    /*url(css/fonts/SourceSansPro-BoldIt.woff) format(woff),*/
-    /*url(css/fonts/SourceSansPro-BoldIt.ttf) format(truetype),*/
-    /*url(css/fonts/SourceSansPro-BoldIt.svg#SourceSansPro-BoldIt) format(svg);*/
-    /*}*/
-    /*@font-face {*/
-    /*font-family: SourceSansPro-ExtraLight;*/
-    /*src: url(css/fonts/SourceSansPro-ExtraLight.eot);*/
-    /*src: url(css/fonts/SourceSansPro-ExtraLight.eot?#iefix) format(embedded-opentype),*/
-    /*url(css/fonts/SourceSansPro-ExtraLight.woff) format(woff),*/
-    /*url(css/fonts/SourceSansPro-ExtraLight.ttf) format(truetype),*/
-    /*url(css/fonts/SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight) format(svg);*/
-    /*}*/
-    /*@font-face {*/
-    /*font-family: SourceSansPro-ExtraLightIt;*/
-    /*src: url(css/fonts/SourceSansPro-ExtraLightIt.eot);*/
-    /*src: url(css/fonts/SourceSansPro-ExtraLightIt.eot?#iefix) format(embedded-opentype),*/
-    /*url(css/fonts/SourceSansPro-ExtraLightIt.woff) format(woff),*/
-    /*url(css/fonts/SourceSansPro-ExtraLightIt.ttf) format(truetype),*/
-    /*url(css/fonts/SourceSansPro-ExtraLightIt.svg#SourceSansPro-ExtraLightIt) format(svg);*/
-    /*}*/
-    /*@font-face {*/
-    /*font-family: SourceSansPro-It;*/
-    /*src: url(css/fonts/SourceSansPro-It.eot);*/
-    /*src: url(css/fonts/SourceSansPro-It.eot?#iefix) format(embedded-opentype),*/
-    /*url(css/fonts/SourceSansPro-It.woff) format(woff),*/
-    /*url(css/fonts/SourceSansPro-It.ttf) format(truetype),*/
-    /*url(css/fonts/SourceSansPro-It.svg#SourceSansPro-It) format(svg);*/
-    /*}*/
     @font-face {
         font-family: SourceSansPro-Light;
         src: url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Light.eot);
@@ -309,14 +276,6 @@
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Light.ttf) format(truetype),
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Light.svg#SourceSansPro-Light) format(svg);
     }
-    /*@font-face {*/
-    /*font-family: SourceSansPro-LightIt;*/
-    /*src: url(css/fonts/SourceSansPro-LightIt.eot);*/
-    /*src: url(css/fonts/SourceSansPro-LightIt.eot?#iefix) format(embedded-opentype),*/
-    /*url(css/fonts/SourceSansPro-LightIt.woff) format(woff),*/
-    /*url(css/fonts/SourceSansPro-LightIt.ttf) format(truetype),*/
-    /*url(css/fonts/SourceSansPro-LightIt.svg#SourceSansPro-LightIt) format(svg);*/
-    /*}*/
     @font-face {
         font-family: SourceSansPro-Regular;
         src: url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Regular.eot);
@@ -333,14 +292,6 @@
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Semibold.ttf) format(truetype),
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Semibold.svg#SourceSansPro-Semibold) format(svg);
     }
-    /*@font-face {*/
-    /*font-family: SourceSansPro-SemiboldIt;*/
-    /*src: url(css/fonts/SourceSansPro-SemiboldIt.eot);*/
-    /*src: url(css/fonts/SourceSansPro-SemiboldIt.eot?#iefix) format(embedded-opentype),*/
-    /*url(css/fonts/SourceSansPro-SemiboldIt.woff) format(woff),*/
-    /*url(css/fonts/SourceSansPro-SemiboldIt.ttf) format(truetype),*/
-    /*url(css/fonts/SourceSansPro-SemiboldIt.svg#SourceSansPro-SemiboldIt) format(svg);*/
-    /*}*/
 </style>
 <div id='dialog'></div>
 <script>
@@ -353,5 +304,8 @@
     ga('send', 'pageview');
 
 </script>
+<?php
+}
+?>
 </body>
 </html>
