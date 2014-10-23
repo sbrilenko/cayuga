@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/favicon.ico" />
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/style.css' type='text/css' media='all' />
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js'></script>
     <?php
-    if(Yii::app()->controller->action->id!=="unsubscribe")
+    if(Yii::app()->controller->action->id!=="unsubscribe" && Yii::app()->controller->action->id!=="unsubscribed")
     {
     ?>
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/owl.carousel.css' type='text/css' media='all' />
     <link rel='stylesheet'  href='<?php echo Yii::app()->request->baseUrl; ?>/css/responsive.css' type='text/css' media='all' />
     <link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/css/animate.min.css' type='text/css' media='all' />
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-migrate.min.js'></script>
     <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.queryloader2.js'></script>
     <script type='text/javascript'>
@@ -215,7 +215,7 @@
 <?php echo $content; ?>
 
 <?php
-if(Yii::app()->controller->action->id!=="unsubscribe")
+if(Yii::app()->controller->action->id!=="unsubscribe" && Yii::app()->controller->action->id!=="unsubscribed")
 {
 ?>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.form.min.js'></script>
@@ -249,8 +249,7 @@ if(Yii::app()->controller->action->id!=="unsubscribe")
     /* ]]> */
 </script>
 <script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/custom-testimonials.js'></script>
-<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui-1.10.4.min.js'></script>
-<link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/css/jquery-ui-1.10.4.min.css' type='text/css' media='all' />
+
 <style>
     @font-face {
         font-family: SourceSansPro-Black;
@@ -293,7 +292,7 @@ if(Yii::app()->controller->action->id!=="unsubscribe")
         url(<?php echo Yii::app()->request->baseUrl; ?>/css/fonts/SourceSansPro-Semibold.svg#SourceSansPro-Semibold) format(svg);
     }
 </style>
-<div id='dialog'></div>
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -308,4 +307,7 @@ if(Yii::app()->controller->action->id!=="unsubscribe")
 }
 ?>
 </body>
+<script type='text/javascript' src='<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui-1.10.4.min.js'></script>
+<link rel='stylesheet' href='<?php echo Yii::app()->request->baseUrl; ?>/css/jquery-ui-1.10.4.min.css' type='text/css' media='all' />
+<div id='dialog'></div>
 </html>

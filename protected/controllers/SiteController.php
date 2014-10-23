@@ -10,6 +10,15 @@ class SiteController extends Controller
     {
         $this->render('subscribe');
     }
+    /**
+     * unsubscribe action
+     *
+     */
+    public function actionUnsubscribed()
+    {
+        $this->render('unsubscribed');
+    }
+
 	/**
 	 * Declares class-based actions.
 	 */

@@ -50,32 +50,18 @@
 </div><!--end wrapper-->
 
 <script>
-    $('form').on('submit',function()
+    $(document).ready(function()
     {
-        var buttonArray={}
-        buttonArray["Ok"]=function() { $( this ).dialog( "destroy" );}
-        var th=$(this);
-        if(!th.hasClass('disabled'))
-        {
-            th.addClass('disabled')
-            if($("input[name=email]").val()!="")
-            {
-                return true;
-            }
-            else
-            {
-                $("#dialog").empty().append("Please enter email").dialog({
-                    dialogClass:'dialog',
-                    position: { my: "center",at: "center",of: window},
-                    draggable:false,
-                    modal:true,
-                    buttons:buttonArray
-                });
-                th.removeClass('disabled');
-
-            }
-        }
+        $("#dialog").empty().append("You are now unsubscribed").dialog({
+            dialogClass:'dialog',
+            position: { my: "center",at: "center",of: window},
+            draggable:false,
+            modal:true,
+            buttons:buttonArray
+        });
     })
+
+
 </script>
 
 
