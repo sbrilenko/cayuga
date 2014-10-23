@@ -53,7 +53,7 @@
     $('form').on('submit',function()
     {
         var buttonArray={}
-        buttonArray["Ok"]=function() { $( this ).dialog( "destroy" );}
+        buttonArray["Ok"]=function() { $("#dialog").hide();$( this ).dialog( "destroy" );}
         var th=$(this);
         if(!th.hasClass('disabled'))
         {
@@ -72,7 +72,6 @@
                     buttons:buttonArray
                 });
                 th.removeClass('disabled');
-
             }
         }
     })
