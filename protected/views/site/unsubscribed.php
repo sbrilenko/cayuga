@@ -5,7 +5,7 @@
     $(document).ready(function()
     {
         var buttonArray={}
-        buttonArray["Ok"]=function() { $("#dialog").hide();$( this ).dialog( "destroy" );}
+        buttonArray["Ok"]=function() { $("#dialog").hide();$( this ).dialog( "destroy" ); window.location.href="/";}
         $("#dialog").empty().append("You are now unsubscribed").dialog({
             dialogClass:'dialog',
             position: { my: "center",at: "center",of: window},
