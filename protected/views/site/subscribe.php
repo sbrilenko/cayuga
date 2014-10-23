@@ -72,6 +72,7 @@
                     buttons:buttonArray
                 });
                 th.removeClass('disabled');
+                return false
             }
         }
     })
