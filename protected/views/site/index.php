@@ -413,6 +413,20 @@
         <div>
             <ul>
                 <li>
+                    <div class="blog-title blog-name">Press Article on our client, Next Gauge </div>
+                    <div class="blog-text client-work-slide-text blog-short-text">
+                        <p>
+                            The CDL Warrior smartphone app (and web application) got reviewed in this article--here is <a target="_blank" href="http://triblive.com/news/editorspicks/7099763-74/app-drivers-cdl#ixzz3JKj3m44G">the link</a>.  Cayugasoft helped Next Gauge, a graduate of the Alpha Lab accelerator in Pittsburgh, build this product. Now, it's getting to be a hot app in the trucking industry, and is beginning to displace expensive proprietary hardware with smartphones.
+                        </p>
+                        <br />
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div>
+            <ul>
+                <li>
                     <div class="blog-title blog-name">Native Development vs. Cross Platform Tools </div>
                     <div class="blog-text client-work-slide-text blog-short-text">
                         <p>When we’re in discussions with a client about developing a new mobile app, it’s usually not long before the question comes up: “What technologies do you want to use for this app?”  Some clients may have already selected the technology they prefer, and normally that settles the question—we use what they want to use.  But when the client doesn’t have a strong point of view on this, they normally ask for our recommendations.</p>
