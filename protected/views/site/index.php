@@ -416,7 +416,7 @@
                     <div class="blog-title blog-name">Press Article on our client, Next Gauge </div>
                     <div class="blog-text client-work-slide-text blog-short-text">
                         <p>
-                            The CDL Warrior smartphone app (and web application) got reviewed in this article--here is <a target="_blank" href="http://triblive.com/news/editorspicks/7099763-74/app-drivers-cdl#ixzz3JKj3m44G">the link</a>.  Cayugasoft helped Next Gauge, a graduate of the Alpha Lab accelerator in Pittsburgh, build this product. Now, it's getting to be a hot app in the trucking industry, and is beginning to displace expensive proprietary hardware with smartphones.
+                            The CDL Warrior smartphone app (and web application) got reviewed in this article--here is <a target="_blank" href="http://triblive.com/news/editorspicks/7099763-74/app-drivers-cdl#ixzz3JKj3m44G">the link</a>.  Cayuga Mobile helped Next Gauge, a graduate of the Alpha Lab accelerator in Pittsburgh, build this product. Now, it's getting to be a hot app in the trucking industry, and is beginning to displace expensive proprietary hardware with smartphones.
                         </p>
                         <br />
                     </div>
