@@ -1,4 +1,6 @@
 cayuga
 ======
 
-cauyuga-yii
+cauyuga site
+Yii framework
+
